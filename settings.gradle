@@ -1,0 +1,2 @@
+include ':app', ':librarysqlitefichamilitar'
+rootProject.name='LibrarySqilteFichaMilitar'
