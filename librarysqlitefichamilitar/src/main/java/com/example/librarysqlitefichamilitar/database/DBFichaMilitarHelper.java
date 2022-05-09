@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 
 public class DBFichaMilitarHelper extends SQLiteOpenHelper {
-    private static int Version = 1;
+    private static int Version = 2;
     public DBFichaMilitarHelper(Context context) {
         super(context, "DBFichaMilitar", null, Version);
     }
@@ -72,19 +72,21 @@ public class DBFichaMilitarHelper extends SQLiteOpenHelper {
                 "tamanho_canicola VARCHAR(5),tamanho_calcao_tfm VARCHAR(5),tamanho_coturno VARCHAR(5)," +
                 "tamanho_saia VARCHAR(5),lotacao VARCHAR(20),status VARCHAR(20),situacao VARCHAR(20),data_atualiz VARCHAR(20), whoupdate VARCHAR(20));");
 
-
-
+        //inicio version 2
+        db.execSQL("CREATE TABLE afastamento( _id INTEGER PRIMARY KEY, id_afastamento INT, id_pessoa INT, ci VARCHAR(10), " +
+                " nome VARCHAR(30), status INT, data_inicio DATE, data_termino DATE, mensagem VARCHAR(30)) ;");
 
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldV, int newV) {
 
-           /* if (newV == Version && oldV == Version - 1) {
+        if (newV == Version && oldV == Version - 1) {
 
+            db.execSQL("CREATE TABLE afastamento( _id INTEGER PRIMARY KEY, id_afastamento INT, id_pessoa INT, ci VARCHAR(10), " +
+                    " nome VARCHAR(30), status INT, data_inicio DATE, data_termino DATE, mensagem VARCHAR(30)) ;");
 
-
-            }*/
+        }
 
 
     }
