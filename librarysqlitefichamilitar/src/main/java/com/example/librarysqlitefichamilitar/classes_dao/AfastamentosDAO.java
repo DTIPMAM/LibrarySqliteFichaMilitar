@@ -17,7 +17,7 @@ public class AfastamentosDAO {
 
     private final Context ctx;
     private final String table_name = "afastamento";
-    private final String[] colunas    = new String[]{
+    private final String[] colunas = new String[]{
             "_id", "id_afastamento", "id_pessoa", "ci",
             "nome", "status", "data_inicio", "data_termino",
             "mensagem"};
@@ -25,7 +25,7 @@ public class AfastamentosDAO {
     public AfastamentosDAO(Context ctx) {
         this.ctx = ctx;
     }
-
+    
     public boolean insert(AfastamentosVO vo) {
         boolean tiporetorn = false;
         SQLiteDatabase db   = new DBFichaMilitarHelper(ctx).getWritableDatabase();
@@ -54,15 +54,15 @@ public class AfastamentosDAO {
             SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
             Cursor c = db.query(table_name, colunas, "id_pessoa = ?", new String[]{id_pessoa}, null, null, null);
             if (c == null) {
-                Tag(ctx, " Cursor  = null"  );
+//                Tag(ctx, " Cursor  = null"  );
                 return null;
 
             } else if (!c.moveToFirst()) {
                 c.close();
-                Tag(ctx, " Cursor  = null"  );
+//                Tag(ctx, " Cursor  = null"  );
                 return null;
             }
-            Tag(ctx, " Cursor  = " + c.getCount() + " Cursor  = " + c.getPosition());
+//            Tag(ctx, " Cursor  = " + c.getCount() + " Cursor  = " + c.getPosition());
 
             do {
                 AfastamentosVO vo = new AfastamentosVO();
