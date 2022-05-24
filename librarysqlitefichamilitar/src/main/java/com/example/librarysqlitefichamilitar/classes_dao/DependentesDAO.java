@@ -15,9 +15,9 @@ import static com.example.librarysqlitefichamilitar.util.Util.Tag;
 
 public class DependentesDAO {
 
-    private Context ctx;
-    private String table_name = "pessoas_dependentes";
-    private String[] colunas    = new String[]{"_id","id_pessoa","nome_dependente","cpf","ci","parentesco","data_nascimento",
+    private final Context ctx;
+    private final String table_name = "pessoas_dependentes";
+    private final String[] colunas    = new String[]{"_id","id_pessoa","nome_dependente","cpf","ci","parentesco","data_nascimento",
             "tipo_boletim","numero_boletim","data_boletim"};
 
     public DependentesDAO(Context ctx) {

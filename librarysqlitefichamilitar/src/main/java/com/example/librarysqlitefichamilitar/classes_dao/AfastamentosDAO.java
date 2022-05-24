@@ -15,9 +15,9 @@ import static com.example.librarysqlitefichamilitar.util.Util.Tag;
 
 public class AfastamentosDAO {
 
-    private Context ctx;
-    private String table_name = "afastamento";
-    private String[] colunas    = new String[]{
+    private final Context ctx;
+    private final String table_name = "afastamento";
+    private final String[] colunas    = new String[]{
             "_id", "id_afastamento", "id_pessoa", "ci",
             "nome", "status", "data_inicio", "data_termino",
             "mensagem"};

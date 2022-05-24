@@ -11,9 +11,9 @@ import com.example.librarysqlitefichamilitar.database.DBFichaMilitarHelper;
 
 public class DadosMilitaresDAO {
 
-    private Context ctx;
-    private String table_name = "pessoas_dados_militares";
-    private String[] colunas    = new String[]{"_id","cpf","idt_militar","nome_guerra","antiguidade","data_exp_identidade","Funcao","PostoPatente","PostoQuadro","FuncaoGratificada","comportamento",
+    private final Context ctx;
+    private final String table_name = "pessoas_dados_militares";
+    private final String[] colunas    = new String[]{"_id","cpf","idt_militar","nome_guerra","antiguidade","data_exp_identidade","Funcao","PostoPatente","PostoQuadro","FuncaoGratificada","comportamento",
             "data_inclusao","bg_inclusao","bg_inclusao_data","data_exclusao","bg_exclusao","bg_exclusao_data","tamanho_calca","tamanho_camisa","tamanho_sapato",
             "tamanho_gorro","tamanho_gandola","tamanho_calca_instrucao","tamanho_canicola","tamanho_calcao_tfm","tamanho_coturno",
             "tamanho_saia","lotacao","status","situacao","data_atualiz","whoupdate"};

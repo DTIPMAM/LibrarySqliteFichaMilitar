@@ -14,9 +14,9 @@ import com.example.librarysqlitefichamilitar.database.DBFichaMilitarHelper;
 
 public class GrauInstrucaoDAO {
 
-    private Context ctx;
-    private String table_name = "pessoas_grau_instrucao";
-    private String[] colunas    = new String[]{"_id","id_pessoa","grauInstrucao"};
+    private final Context ctx;
+    private final String table_name = "pessoas_grau_instrucao";
+    private final String[] colunas    = new String[]{"_id","id_pessoa","grauInstrucao"};
 
     public GrauInstrucaoDAO(Context ctx) {
         this.ctx = ctx;

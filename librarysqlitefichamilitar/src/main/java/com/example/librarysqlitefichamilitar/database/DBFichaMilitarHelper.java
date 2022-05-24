@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 
 public class DBFichaMilitarHelper extends SQLiteOpenHelper {
-    private static int Version = 2;
+    private static final int Version = 2;
     public DBFichaMilitarHelper(Context context) {
         super(context, "DBFichaMilitar", null, Version);
     }

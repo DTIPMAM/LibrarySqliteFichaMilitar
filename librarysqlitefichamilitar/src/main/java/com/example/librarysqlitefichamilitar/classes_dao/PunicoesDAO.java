@@ -15,9 +15,9 @@ import static com.example.librarysqlitefichamilitar.util.Util.Tag;
 
 public class PunicoesDAO {
 
-    private Context ctx;
-    private String table_name = "pessoas_puncoes";
-    private String[] colunas = new String[]{"_id", "id_pessoa", "data_punicao", "descricao_punicao", "data_boletim", "numero_boletim"};
+    private final Context ctx;
+    private final String table_name = "pessoas_puncoes";
+    private final String[] colunas = new String[]{"_id", "id_pessoa", "data_punicao", "descricao_punicao", "data_boletim", "numero_boletim"};
 
     public PunicoesDAO(Context ctx) {
         this.ctx = ctx;
