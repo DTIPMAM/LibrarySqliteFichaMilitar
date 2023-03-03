@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 
 public class DBFichaMilitarHelper extends SQLiteOpenHelper {
-    private static final int Version = 3;
+    private static final int Version = 4;
     public DBFichaMilitarHelper(Context context) {
         super(context, "DBFichaMilitar", null, Version);
     }
@@ -78,7 +78,7 @@ public class DBFichaMilitarHelper extends SQLiteOpenHelper {
 
         //inicio version 4
         db.execSQL("CREATE TABLE declaracao_bens( _id INTEGER PRIMARY KEY, id_tipo_bens INT, id_declaracao INT, id_pessoa INT, nome VARCHAR(100), " +
-                " matricula VARCHAR(30), data_criacao DATE, apresentou_decla_bens VARCHAR(4), " +
+                " matricula VARCHAR(30), cpf VARCHAR(11), data_criacao DATE, apresentou_decla_bens VARCHAR(4), " +
                 "acumula_cargo_funcao VARCHAR(4), descr VARCHAR(300), valor_bem DECIMAL(10), observacoes VARCHAR(255));");
 
 
@@ -90,7 +90,7 @@ public class DBFichaMilitarHelper extends SQLiteOpenHelper {
         if (newV == Version && oldV == Version - 1) {
 
             db.execSQL("CREATE TABLE declaracao_bens( _id INTEGER PRIMARY KEY, id_tipo_bens INT, id_declaracao INT, id_pessoa INT, nome VARCHAR(100), " +
-                    " matricula VARCHAR(30), data_criacao DATE, apresentou_decla_bens VARCHAR(4), " +
+                    " matricula VARCHAR(30), cpf VARCHAR(11), data_criacao DATE, apresentou_decla_bens VARCHAR(4), " +
                     "acumula_cargo_funcao VARCHAR(4), descr VARCHAR(300), valor_bem DECIMAL(10), observacoes VARCHAR(255));");
 
         }
