@@ -7,10 +7,14 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
 
     private int id;
     private int id_pessoa;
-    private int id_bens;
+    private int id_tipo_bens;
+    private int id_declaracao;
     private String apresentou_decla_bens;
     private String acumula_cargo_funcao;
     private String descr;
+    private String nome;
+    private String matricula;
+    private String cpf;
     private float valor_bem;
     private String observacoes;
     private String data_criacao;
@@ -21,26 +25,58 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
     protected DeclaracaoPatrimonioVO(Parcel in) {
         id = in.readInt();
         id_pessoa = in.readInt();
-        id_bens = in.readInt();
+        id_tipo_bens = in.readInt();
+        id_declaracao = in.readInt();
         valor_bem = in.readFloat();
         apresentou_decla_bens = in.readString();
         acumula_cargo_funcao = in.readString();
         descr = in.readString();
         observacoes = in.readString();
         data_criacao = in.readString();
+        nome = in.readString();
+        cpf = in.readString();
+        matricula = in.readString();
     }
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(id);
         dest.writeInt(id_pessoa);
-        dest.writeInt(id_bens);
+        dest.writeInt(id_declaracao);
+        dest.writeInt(id_tipo_bens);
         dest.writeFloat(valor_bem);
         dest.writeString(apresentou_decla_bens);
         dest.writeString(acumula_cargo_funcao);
         dest.writeString(descr);
         dest.writeString(observacoes);
         dest.writeString(data_criacao);
+        dest.writeString(nome);
+        dest.writeString(matricula);
+        dest.writeString(cpf);
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public int getId() {
@@ -59,12 +95,20 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
         this.id_pessoa = id_pessoa;
     }
 
-    public int getId_bens() {
-        return id_bens;
+    public int getId_tipo_bens() {
+        return id_tipo_bens;
     }
 
-    public void setId_bens(int id_bens) {
-        this.id_bens = id_bens;
+    public void setId_tipo_bens(int id_tipo_bens) {
+        this.id_tipo_bens = id_tipo_bens;
+    }
+
+    public int getId_declaracao() {
+        return id_declaracao;
+    }
+
+    public void setId_declaracao(int id_declaracao) {
+        this.id_declaracao = id_declaracao;
     }
 
     public String getApresentou_decla_bens() {

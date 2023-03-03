@@ -17,9 +17,9 @@ public class DeclaracaoPatrimonioDAO {
     private final Context ctx;
     private final String table_name = "declaracao_bens";
     private final String[] colunas = new String[]{
-            "_id", "id_bens", "id_pessoa", "ci",
-            "nome", "status", "data_inicio", "data_termino",
-            "mensagem"};
+            "_id", "id_declaracao", "id_tipo_bens", "id_pessoa", "nome",
+            "matrica", "cpf", "matricula", "apresentou_decla_bens", "acumula_cargo_funcao",
+            "descr", "valor_bem", "observacoes"};
 
     public DeclaracaoPatrimonioDAO(Context ctx) {
         this.ctx = ctx;
@@ -31,8 +31,12 @@ public class DeclaracaoPatrimonioDAO {
         SQLiteDatabase db   = new DBFichaMilitarHelper(ctx).getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("_id",vo.getId());
-        values.put("id_bens",vo.getId_bens());
+        values.put("id_declaracao",vo.getId_declaracao());
+        values.put("id_tipo_bens",vo.getId_tipo_bens());
         values.put("id_pessoa",vo.getId_pessoa());
+        values.put("nome", vo.getNome());
+        values.put("matricula", vo.getNome());
+        values.put("cpf", vo.getNome());
         values.put("valor_bem", vo.getValor_bem());
         values.put("apresentou_decla_bens", vo.getApresentou_decla_bens());
         values.put("acumula_cargo_funcao", vo.getAcumula_cargo_funcao());
@@ -67,8 +71,11 @@ public class DeclaracaoPatrimonioDAO {
 
             do {
                 DeclaracaoPatrimonioVO vo = new DeclaracaoPatrimonioVO();
-                vo.setId_bens(c.getInt(c.getColumnIndex("id_bens")));
-                vo.setId(c.getInt(c.getColumnIndex("_id")));
+                vo.setId_tipo_bens(c.getInt(c.getColumnIndex("id_tipo_bens")));
+                vo.setId_declaracao(c.getInt(c.getColumnIndex("id_declaracao")));
+                vo.setMatricula(c.getString(c.getColumnIndex("matricula")));
+                vo.setNome(c.getString(c.getColumnIndex("nome")));
+                vo.setCpf(c.getString(c.getColumnIndex("cpf")));
                 vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
                 vo.setValor_bem(c.getInt(c.getColumnIndex("valor_bem")));
                 vo.setApresentou_decla_bens(c.getString(c.getColumnIndex("apresentou_decla_bens")));
@@ -104,7 +111,7 @@ public class DeclaracaoPatrimonioDAO {
 
         SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
         String[] busca = new String[]{token};
-        Cursor c = db.query(table_name, colunas, "_id = ?", busca, null, null, null, null);
+        Cursor c = db.query(table_name, colunas, "id_declaracao = ?", busca, null, null, null, null);
         if (c == null) {
             c.close();
             db.close();
@@ -122,14 +129,18 @@ public class DeclaracaoPatrimonioDAO {
         SQLiteDatabase db     = new DBFichaMilitarHelper(ctx).getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("id_pessoa",vo.getId_pessoa());
-        values.put("id_bens",vo.getId_bens());
+        values.put("id_tipo_bens",vo.getId_tipo_bens());
+        values.put("id_declaracao",vo.getId_declaracao());
         values.put("valor_bem",vo.getValor_bem());
         values.put("apresentou_decla_bens",vo.getApresentou_decla_bens());
         values.put("acumula_cargo_funcao",vo.getAcumula_cargo_funcao());
         values.put("descr",vo.getDescr());
         values.put("observacoes",vo.getObservacoes());
-        
-        if(db.update(table_name, values, "_id = ?", new String[]{cod}) > 0){
+        values.put("nome",vo.getNome());
+        values.put("cpf",vo.getCpf());
+        values.put("matricula",vo.getMatricula());
+
+        if(db.update(table_name, values, "id_declaracao = ?", new String[]{cod}) > 0){
             db.close();
             return true;
         }else{
@@ -173,7 +184,7 @@ public class DeclaracaoPatrimonioDAO {
     public boolean deletaitem(String num) {
         boolean excluir = false;
         SQLiteDatabase db    = new DBFichaMilitarHelper(ctx).getWritableDatabase();
-        if(db.delete(table_name, "_id = ?", new String[]{num}) > 0){
+        if(db.delete(table_name, "id_declaracao = ?", new String[]{num}) > 0){
             excluir = true;
         }else {
             excluir = false;
@@ -191,7 +202,7 @@ public class DeclaracaoPatrimonioDAO {
 
             String[] busca = new String[]{codescala};
 
-            Cursor c = db.query(table_name, colunas, "_id = ?", busca, null, null, null, null);
+            Cursor c = db.query(table_name, colunas, "id_declaracao = ?", busca, null, null, null, null);
             if (c.getCount() >= 1) {
                 tiporetorn = true;
             } else {
