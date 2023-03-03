@@ -17,8 +17,7 @@ public class DeclaracaoPatrimonioDAO {
     private final Context ctx;
     private final String table_name = "declaracao_bens";
     private final String[] colunas = new String[]{
-            "_id", "id_declaracao", "id_tipo_bens", "id_pessoa", "nome",
-            "matrica", "cpf", "matricula", "apresentou_decla_bens", "acumula_cargo_funcao",
+            "_id", "id_declaracao", "id_tipo_bens", "id_pessoa", "nome", "cpf", "matricula", "apresentou_decla_bens", "acumula_cargo_funcao",
             "descr", "valor_bem", "observacoes"};
 
     public DeclaracaoPatrimonioDAO(Context ctx) {
