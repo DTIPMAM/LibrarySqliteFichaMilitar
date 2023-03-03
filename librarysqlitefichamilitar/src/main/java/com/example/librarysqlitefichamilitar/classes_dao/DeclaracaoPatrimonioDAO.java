@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class DeclaracaoPatrimonioDAO {
 
     private final Context ctx;
-    private final String table_name = "declaracao_patrimonio";
+    private final String table_name = "declaracao_bens";
     private final String[] colunas = new String[]{
             "_id", "id_bens", "id_pessoa", "ci",
             "nome", "status", "data_inicio", "data_termino",
