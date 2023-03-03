@@ -11,7 +11,7 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
     private String apresentou_decla_bens;
     private String acumula_cargo_funcao;
     private String descr;
-    private int valor_bem;
+    private float valor_bem;
     private String observacoes;
 
     public DeclaracaoPatrimonioVO() {
@@ -21,7 +21,7 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
         id = in.readInt();
         id_pessoa = in.readInt();
         id_bens = in.readInt();
-        valor_bem = in.readInt();
+        valor_bem = in.readFloat();
         apresentou_decla_bens = in.readString();
         acumula_cargo_funcao = in.readString();
         descr = in.readString();
@@ -33,7 +33,7 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
         dest.writeInt(id);
         dest.writeInt(id_pessoa);
         dest.writeInt(id_bens);
-        dest.writeInt(valor_bem);
+        dest.writeFloat(valor_bem);
         dest.writeString(apresentou_decla_bens);
         dest.writeString(acumula_cargo_funcao);
         dest.writeString(descr);
@@ -88,11 +88,11 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
         this.descr = descr;
     }
 
-    public int getValor_bem() {
+    public float getValor_bem() {
         return valor_bem;
     }
 
-    public void setValor_bem(int valor_bem) {
+    public void setValor_bem(float valor_bem) {
         this.valor_bem = valor_bem;
     }
 
