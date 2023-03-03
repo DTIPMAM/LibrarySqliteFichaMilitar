@@ -30,6 +30,7 @@ public class DeclaracaoPatrimonioDAO {
         boolean tiporetorn = false;
         SQLiteDatabase db   = new DBFichaMilitarHelper(ctx).getWritableDatabase();
         ContentValues values = new ContentValues();
+        values.put("_id",vo.getId());
         values.put("id_bens",vo.getId_bens());
         values.put("id_pessoa",vo.getId_pessoa());
         values.put("valor_bem", vo.getValor_bem());
@@ -67,6 +68,7 @@ public class DeclaracaoPatrimonioDAO {
             do {
                 DeclaracaoPatrimonioVO vo = new DeclaracaoPatrimonioVO();
                 vo.setId_bens(c.getInt(c.getColumnIndex("id_bens")));
+                vo.setId(c.getInt(c.getColumnIndex("_id")));
                 vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
                 vo.setValor_bem(c.getInt(c.getColumnIndex("valor_bem")));
                 vo.setApresentou_decla_bens(c.getString(c.getColumnIndex("apresentou_decla_bens")));
