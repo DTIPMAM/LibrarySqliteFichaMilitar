@@ -127,7 +127,7 @@ public class DeclaracaoPatrimonioDAO {
         values.put("descr",vo.getDescr());
         values.put("observacoes",vo.getObservacoes());
         
-        if(db.update(table_name, values, "id_bens = ?", new String[]{cod}) > 0){
+        if(db.update(table_name, values, "ID = ?", new String[]{cod}) > 0){
             db.close();
             return true;
         }else{
@@ -171,7 +171,7 @@ public class DeclaracaoPatrimonioDAO {
     public boolean deletaitem(String num) {
         boolean excluir = false;
         SQLiteDatabase db    = new DBFichaMilitarHelper(ctx).getWritableDatabase();
-        if(db.delete(table_name, "id_bens = ?", new String[]{num}) > 0){
+        if(db.delete(table_name, "ID = ?", new String[]{num}) > 0){
             excluir = true;
         }else {
             excluir = false;
@@ -189,7 +189,7 @@ public class DeclaracaoPatrimonioDAO {
 
             String[] busca = new String[]{codescala};
 
-            Cursor c = db.query(table_name, colunas, "id_bens = ?", busca, null, null, null, null);
+            Cursor c = db.query(table_name, colunas, "ID = ?", busca, null, null, null, null);
             if (c.getCount() >= 1) {
                 tiporetorn = true;
             } else {
