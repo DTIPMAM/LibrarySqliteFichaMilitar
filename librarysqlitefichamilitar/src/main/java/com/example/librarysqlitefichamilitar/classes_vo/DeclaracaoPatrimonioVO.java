@@ -13,6 +13,7 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
     private String descr;
     private float valor_bem;
     private String observacoes;
+    private String data_criacao;
 
     public DeclaracaoPatrimonioVO() {
     }
@@ -26,6 +27,7 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
         acumula_cargo_funcao = in.readString();
         descr = in.readString();
         observacoes = in.readString();
+        data_criacao = in.readString();
     }
 
     @Override
@@ -38,6 +40,7 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
         dest.writeString(acumula_cargo_funcao);
         dest.writeString(descr);
         dest.writeString(observacoes);
+        dest.writeString(data_criacao);
     }
 
     public int getId() {
@@ -102,6 +105,14 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
 
     public void setObservacoes(String observacoes) {
         this.observacoes = observacoes;
+    }
+
+    public String getData_criacao() {
+        return data_criacao;
+    }
+
+    public void setData_criacao(String data_criacao) {
+        this.data_criacao = data_criacao;
     }
 
     @Override
