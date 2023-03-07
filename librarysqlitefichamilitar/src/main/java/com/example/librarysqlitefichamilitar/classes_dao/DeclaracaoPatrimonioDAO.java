@@ -17,7 +17,8 @@ public class DeclaracaoPatrimonioDAO {
     private final Context ctx;
     private final String table_name = "declaracao_bens";
     private final String[] colunas = new String[]{
-            "_id", "id_declaracao", "id_tipo_bens", "id_pessoa", "nome", "cpf", "matricula", "apresentou_decla_bens", "acumula_cargo_funcao",
+            "_id", "id_declaracao", "id_tipo_bens", "id_pessoa", "nome", "cpf",
+            "matricula", "apresentou_decla_bens", "acumula_cargo_funcao",
             "descr", "valor_bem", "observacoes"};
 
     public DeclaracaoPatrimonioDAO(Context ctx) {
@@ -29,7 +30,6 @@ public class DeclaracaoPatrimonioDAO {
         boolean tiporetorn = false;
         SQLiteDatabase db   = new DBFichaMilitarHelper(ctx).getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put("_id",vo.getId());
         values.put("id_declaracao",vo.getId_declaracao());
         values.put("id_tipo_bens",vo.getId_tipo_bens());
         values.put("id_pessoa",vo.getId_pessoa());
@@ -82,7 +82,7 @@ public class DeclaracaoPatrimonioDAO {
                 vo.setDescr(c.getString(c.getColumnIndex("descr")));
                 vo.setObservacoes(c.getString(c.getColumnIndex("observacoes")));
                 lista.add(vo);
-            }while (c.moveToNext());
+            } while (c.moveToNext());
             c.close();
             db.close();
             return lista;
