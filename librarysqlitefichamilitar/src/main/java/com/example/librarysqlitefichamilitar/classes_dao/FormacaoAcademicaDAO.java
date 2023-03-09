@@ -17,7 +17,8 @@ public class FormacaoAcademicaDAO {
 
     private final Context ctx;
     private final String table_name = "pessoas_formacao_academica";
-    private final String[] colunas = new String[]{"_id", "id_pessoa", "area", "nome_curso", "instituicao", "finl", "carga_horaria", "completo"};
+    private final String[] colunas = new String[]{"_id", "id_pessoa", "area", "nome_curso",
+            "instituicao", "finl", "carga_horaria", "completo"};
 
     public FormacaoAcademicaDAO(Context ctx) {
         this.ctx = ctx;
