@@ -8,7 +8,6 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
     private int id;
     private int id_pessoa;
     private int id_tipo_bens;
-    private int id_declaracao;
     private String apresentou_decla_bens;
     private String acumula_cargo_funcao;
     private String descr;
@@ -23,7 +22,6 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
         id = in.readInt();
         id_pessoa = in.readInt();
         id_tipo_bens = in.readInt();
-        id_declaracao = in.readInt();
         valor_bem = in.readFloat();
         apresentou_decla_bens = in.readString();
         acumula_cargo_funcao = in.readString();
