@@ -1,5 +1,7 @@
 package com.example.librarysqlitefichamilitar.classes_dao;
 
+import static com.example.librarysqlitefichamilitar.util.Util.Tag;
+
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
@@ -57,10 +59,10 @@ public class DeclaracaoPatrimonioDAO {
 
             } else if (!c.moveToFirst()) {
                 c.close();
-//                Tag(ctx, " Cursor  = null"  );
+                Tag(ctx, " Cursor  = null"  );
                 return null;
             }
-//            Tag(ctx, " Cursor  = " + c.getCount() + " Cursor  = " + c.getPosition());
+            Tag(ctx, " Cursor  = " + c.getCount() + " Cursor  = " + c.getPosition());
 
             do {
                 DeclaracaoPatrimonioVO vo = new DeclaracaoPatrimonioVO();
