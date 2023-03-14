@@ -94,7 +94,7 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
         this.descr = descr;
     }
 
-    public double getValor_bem() {
+    public flost getValor_bem() {
         return valor_bem;
     }
 
