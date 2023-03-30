@@ -70,8 +70,11 @@ public class DBFichaMilitarHelper extends SQLiteOpenHelper {
                 "tamanho_calca VARCHAR(5),tamanho_camisa VARCHAR(5),tamanho_sapato VARCHAR(5)," +
                 "tamanho_gorro VARCHAR(5),tamanho_gandola VARCHAR(5),tamanho_calca_instrucao VARCHAR(5)," +
                 "tamanho_canicola VARCHAR(5),tamanho_calcao_tfm VARCHAR(5),tamanho_coturno VARCHAR(5)," +
-                "tamanho_saia VARCHAR(5),lotacao VARCHAR(20),status VARCHAR(20),situacao VARCHAR(20),data_atualiz VARCHAR(20), whoupdate VARCHAR(20), tempo_servico VARCHAR(20));");
+                "tamanho_saia VARCHAR(5),lotacao VARCHAR(20),status VARCHAR(20),situacao VARCHAR(20),data_atualiz VARCHAR(20), whoupdate VARCHAR(20));");
 
+        db.execSQL("ALTER TABLE pessoas_dados_militares ADD tempo_servico VARCHAR(20);");
+
+        
         //inicio version 2
         db.execSQL("CREATE TABLE afastamento( _id INTEGER PRIMARY KEY, id_afastamento INT, id_pessoa INT, ci VARCHAR(10), " +
                 " nome VARCHAR(30), status INT, data_inicio DATE, data_termino DATE, mensagem VARCHAR(30)) ;");
@@ -80,6 +83,7 @@ public class DBFichaMilitarHelper extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE declaracao_bens( _id INTEGER PRIMARY KEY, id_tipo_bens INT, id_pessoa INT, " +
                  "data_criacao DATE, apresentou_decla_bens VARCHAR(4), " +
                 "acumula_cargo_funcao VARCHAR(4), descr VARCHAR(300), valor_bem DECIMAL(10), observacoes VARCHAR(255));");
+
 
 
     }
@@ -92,6 +96,8 @@ public class DBFichaMilitarHelper extends SQLiteOpenHelper {
             db.execSQL("CREATE TABLE declaracao_bens( _id INTEGER PRIMARY KEY, id_tipo_bens INT, id_declaracao INT, id_pessoa INT, " +
                     "data_criacao DATE, apresentou_decla_bens VARCHAR(4), " +
                     "acumula_cargo_funcao VARCHAR(4), descr VARCHAR(300), valor_bem DECIMAL(10), observacoes VARCHAR(255));");
+
+            db.execSQL("ALTER TABLE pessoas_dados_militares ADD tempo_servico VARCHAR(20);");
 
         }
 
