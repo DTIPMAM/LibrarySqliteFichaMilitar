@@ -30,6 +30,7 @@ public class DeclaracaoPatrimonioDAO {
     public boolean insert(DeclaracaoPatrimonioVO vo) {
         SQLiteDatabase db   = new DBFichaMilitarHelper(ctx).getWritableDatabase();
         ContentValues values = new ContentValues();
+        values.put("_id", vo.getId());
         values.put("id_tipo_bens",vo.getId_tipo_bens());
         values.put("id_pessoa",vo.getId_pessoa());
         values.put("valor_bem", vo.getValor_bem());
@@ -38,7 +39,58 @@ public class DeclaracaoPatrimonioDAO {
         values.put("descr", vo.getDescr());
         values.put("observacoes", vo.getObservacoes());
         values.put("data_criacao", vo.getData_criacao());
-        if(db.insert(table_name, null, values) > 0){
+        if (db.insert(table_name, null, values) > 0) {
+            db.close();
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public Cursor buscarTudo() {
+        SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
+        Cursor c = db.query(table_name, colunas, null, null, null, null, null);
+        if (c == null) {
+            return null;
+        } else if (!c.moveToFirst()) {
+            c.close();
+            return null;
+        }
+        return c;
+    }
+
+    //-----------------------------------------
+    public Cursor buscarIdMilitar(String token) {
+
+        SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
+        String[] busca = new String[]{token};
+        Cursor c = db.query(table_name, colunas, "_id = ?", busca, null, null, null, null);
+        if (c == null) {
+            c.close();
+            db.close();
+            return null;
+        } else if (!c.moveToFirst()) {
+            c.close();
+            db.close();
+            return null;
+        }
+        return c;
+
+    }
+
+    public boolean update(DeclaracaoPatrimonioVO vo , String cod) {
+
+        SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("id_pessoa",vo.getId_pessoa());
+        values.put("id_tipo_bens",vo.getId_tipo_bens());
+        values.put("valor_bem",vo.getValor_bem());
+        values.put("apresentou_decla_bens",vo.getApresentou_decla_bens());
+        values.put("acumula_cargo_funcao",vo.getAcumula_cargo_funcao());
+        values.put("descr",vo.getDescr());
+        values.put("observacoes",vo.getObservacoes());
+        values.put("data_criacao",vo.getData_criacao());
+        if (db.update(table_name, values, "_id = ?", new String[]{cod}) > 0) {
             db.close();
             return true;
         } else {
@@ -66,6 +118,7 @@ public class DeclaracaoPatrimonioDAO {
 
             do {
                 DeclaracaoPatrimonioVO vo = new DeclaracaoPatrimonioVO();
+                vo.setId(c.getInt(c.getColumnIndex("_id")));
                 vo.setId_tipo_bens(c.getInt(c.getColumnIndex("id_tipo_bens")));
                 vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
                 vo.setValor_bem(c.getInt(c.getColumnIndex("valor_bem")));
@@ -87,54 +140,7 @@ public class DeclaracaoPatrimonioDAO {
     }
 
 
-    public Cursor buscarTudo() {
-        SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
-        Cursor c = db.query(table_name, colunas, null, null, null, null, null);
-        if (c == null) {
-            return null;
-        } else if (!c.moveToFirst()) {
-            c.close();
-            return null;
-        }
-        return c;
-    }
-    //-----------------------------------------
-    public Cursor buscarIdMilitar(String token) {
 
-        SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
-        String[] busca = new String[]{token};
-        Cursor c = db.query(table_name, colunas, "_id = ?", busca, null, null, null, null);
-        if (c == null) {
-            c.close();
-            db.close();
-            return null;
-        } else if (!c.moveToFirst()) {
-            c.close();
-            db.close();
-            return null;
-        }
-        return c;
-
-    }
-    public boolean update(DeclaracaoPatrimonioVO vo , String cod) {
-
-        SQLiteDatabase db     = new DBFichaMilitarHelper(ctx).getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put("id_pessoa",vo.getId_pessoa());
-        values.put("id_tipo_bens",vo.getId_tipo_bens());
-        values.put("valor_bem",vo.getValor_bem());
-        values.put("apresentou_decla_bens",vo.getApresentou_decla_bens());
-        values.put("acumula_cargo_funcao",vo.getAcumula_cargo_funcao());
-        values.put("descr",vo.getDescr());
-        values.put("observacoes",vo.getObservacoes());
-        values.put("data_criacao",vo.getData_criacao());
-        if(db.update(table_name, values, "_id = ?", new String[]{cod}) > 0){
-            db.close();
-            return true;
-        }else{
-            return false;
-        }
-    }
 
     public boolean deleteall() {
         boolean excluir = false;
@@ -171,12 +177,8 @@ public class DeclaracaoPatrimonioDAO {
 
     public boolean deletaitem(String num) {
         boolean excluir = false;
-        SQLiteDatabase db    = new DBFichaMilitarHelper(ctx).getWritableDatabase();
-        if(db.delete(table_name, "_id = ?", new String[]{num}) > 0){
-            excluir = true;
-        }else {
-            excluir = false;
-        }
+        SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
+        excluir = db.delete(table_name, "_id = ?", new String[]{num}) > 0;
         db.close();
         return excluir;
     }
@@ -214,6 +216,29 @@ public class DeclaracaoPatrimonioDAO {
             String[] busca = new String[]{id_pessoa};
 
             Cursor c = db.query(table_name, colunas, "id_pessoa = ?", busca, null, null, null, null);
+            if (c.getCount() >= 1) {
+                tiporetorn = true;
+            } else {
+                tiporetorn = false;
+            }
+            c.close();
+            db.close();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        return tiporetorn;
+    }
+
+    public boolean VerificaSeTemIdFB ( String id) {
+
+        boolean tiporetorn = false;
+        try {
+            SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
+
+            String[] busca = new String[]{id};
+
+            Cursor c = db.query(table_name, colunas, "_id = ?", busca, null, null, null, null);
             if (c.getCount() >= 1) {
                 tiporetorn = true;
             } else {

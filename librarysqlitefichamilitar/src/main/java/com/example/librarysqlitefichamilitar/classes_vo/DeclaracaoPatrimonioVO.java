@@ -31,6 +31,21 @@ public class DeclaracaoPatrimonioVO implements Parcelable {
     }
 
     @Override
+    public String toString() {
+        return "DeclaracaoPatrimonioVO{" +
+                "id=" + id +
+                ", id_pessoa=" + id_pessoa +
+                ", id_tipo_bens=" + id_tipo_bens +
+                ", apresentou_decla_bens='" + apresentou_decla_bens + '\'' +
+                ", acumula_cargo_funcao='" + acumula_cargo_funcao + '\'' +
+                ", descr='" + descr + '\'' +
+                ", valor_bem=" + valor_bem +
+                ", observacoes='" + observacoes + '\'' +
+                ", data_criacao='" + data_criacao + '\'' +
+                '}';
+    }
+
+    @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(id);
         dest.writeInt(id_pessoa);

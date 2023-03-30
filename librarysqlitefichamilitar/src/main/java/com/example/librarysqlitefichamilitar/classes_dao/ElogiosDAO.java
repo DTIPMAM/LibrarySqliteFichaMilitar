@@ -1,5 +1,6 @@
 package com.example.librarysqlitefichamilitar.classes_dao;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -178,6 +179,7 @@ public class ElogiosDAO {
         return tiporetorn;
     }
 
+    @SuppressLint("Range")
     public ArrayList<ElogiosVO> getListaVO(String id_pessoa) {
 
         ArrayList<ElogiosVO> lista = new ArrayList<ElogiosVO>();
