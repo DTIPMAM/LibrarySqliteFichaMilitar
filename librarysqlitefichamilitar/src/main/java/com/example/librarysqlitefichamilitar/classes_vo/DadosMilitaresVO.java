@@ -25,6 +25,7 @@ public class DadosMilitaresVO implements Parcelable {
     private String data_exclusao;
     private String bg_exclusao;
     private String bg_exclusao_data;
+    private String tempo_servico;
 
     public DadosMilitaresVO() {
     }
@@ -65,6 +66,7 @@ public class DadosMilitaresVO implements Parcelable {
         lotacao = in.readString();
         status = in.readString();
         situacao = in.readString();
+        tempo_servico = in.readString();
     }
 
     @Override
@@ -101,6 +103,7 @@ public class DadosMilitaresVO implements Parcelable {
         dest.writeString(lotacao);
         dest.writeString(status);
         dest.writeString(situacao);
+        dest.writeString(tempo_servico);
     }
 
     @Override
@@ -373,6 +376,14 @@ public class DadosMilitaresVO implements Parcelable {
     private String lotacao;
     private String status;
     private String situacao;
+
+    public String getTempo_servico() {
+        return tempo_servico;
+    }
+
+    public void setTempo_servico(String tempo_servico) {
+        this.tempo_servico = tempo_servico;
+    }
 
     public String getData_atualiz() {
         return data_atualiz;

@@ -16,7 +16,7 @@ public class DadosMilitaresDAO {
     private final String[] colunas    = new String[]{"_id","cpf","idt_militar","nome_guerra","antiguidade","data_exp_identidade","Funcao","PostoPatente","PostoQuadro","FuncaoGratificada","comportamento",
             "data_inclusao","bg_inclusao","bg_inclusao_data","data_exclusao","bg_exclusao","bg_exclusao_data","tamanho_calca","tamanho_camisa","tamanho_sapato",
             "tamanho_gorro","tamanho_gandola","tamanho_calca_instrucao","tamanho_canicola","tamanho_calcao_tfm","tamanho_coturno",
-            "tamanho_saia","lotacao","status","situacao","data_atualiz","whoupdate"};
+            "tamanho_saia","lotacao","status","situacao","data_atualiz","whoupdate", "tempo_servico"};
 
     public DadosMilitaresDAO(Context ctx) {
         this.ctx = ctx;
@@ -56,6 +56,7 @@ public class DadosMilitaresDAO {
         values.put("situacao",vo.getSituacao());
         values.put("data_atualiz",vo.getData_atualiz());
         values.put("whoupdate",vo.getWhoupdate());
+        values.put("tempo_servico",vo.getTempo_servico());
         if(db.insert(table_name, null, values) > 0){
             db.close();
             return true;
@@ -146,6 +147,7 @@ public class DadosMilitaresDAO {
         values.put("situacao",vo.getSituacao());
         values.put("data_atualiz",vo.getData_atualiz());
         values.put("whoupdate",vo.getWhoupdate());
+        values.put("tempo_servico",vo.getTempo_servico());
         if(db.update(table_name, values, "_id = ?", new String[]{cod}) > 0){
             db.close();
             return true;
