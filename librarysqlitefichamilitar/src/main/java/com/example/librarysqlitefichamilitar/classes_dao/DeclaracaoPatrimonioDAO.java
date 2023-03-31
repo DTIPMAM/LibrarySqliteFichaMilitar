@@ -19,7 +19,7 @@ public class DeclaracaoPatrimonioDAO {
     private final Context ctx;
     private final String table_name = "declaracao_bens";
     private final String[] colunas = new String[]{
-            "_id", "id_tipo_bens", "id_pessoa", "apresentou_decla_bens", "acumula_cargo_funcao",
+            "_id", "id_bens", "id_pessoa", "apresentou_decla_bens", "acumula_cargo_funcao",
             "descr", "valor_bem", "observacoes","data_criacao"};
 
     public DeclaracaoPatrimonioDAO(Context ctx) {
@@ -31,7 +31,7 @@ public class DeclaracaoPatrimonioDAO {
         SQLiteDatabase db   = new DBFichaMilitarHelper(ctx).getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("_id", vo.getId());
-        values.put("id_tipo_bens",vo.getId_tipo_bens());
+        values.put("id_bens",vo.getId_tipo_bens());
         values.put("id_pessoa",vo.getId_pessoa());
         values.put("valor_bem", vo.getValor_bem());
         values.put("apresentou_decla_bens", vo.getApresentou_decla_bens());
@@ -83,7 +83,7 @@ public class DeclaracaoPatrimonioDAO {
         SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("id_pessoa",vo.getId_pessoa());
-        values.put("id_tipo_bens",vo.getId_tipo_bens());
+        values.put("id_bens",vo.getId_tipo_bens());
         values.put("valor_bem",vo.getValor_bem());
         values.put("apresentou_decla_bens",vo.getApresentou_decla_bens());
         values.put("acumula_cargo_funcao",vo.getAcumula_cargo_funcao());
@@ -119,7 +119,7 @@ public class DeclaracaoPatrimonioDAO {
             do {
                 DeclaracaoPatrimonioVO vo = new DeclaracaoPatrimonioVO();
                 vo.setId(c.getInt(c.getColumnIndex("_id")));
-                vo.setId_tipo_bens(c.getInt(c.getColumnIndex("id_tipo_bens")));
+                vo.setId_tipo_bens(c.getInt(c.getColumnIndex("id_bens")));
                 vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
                 vo.setValor_bem(c.getInt(c.getColumnIndex("valor_bem")));
                 vo.setApresentou_decla_bens(c.getString(c.getColumnIndex("apresentou_decla_bens")));

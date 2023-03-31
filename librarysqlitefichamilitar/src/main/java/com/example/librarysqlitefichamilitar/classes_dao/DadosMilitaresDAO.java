@@ -309,6 +309,7 @@ public class DadosMilitaresDAO {
         vo.setTamanho_saia(c.getString(c.getColumnIndex("tamanho_saia")));
         vo.setData_atualiz(c.getString(c.getColumnIndex("data_atualiz")));
         vo.setWhoupdate(c.getString(c.getColumnIndex("whoupdate")));
+        vo.setTempo_servico(c.getString(c.getColumnIndex("tempo_servico")));
 
         //lotacao
         vo.setLotacao(c.getString(c.getColumnIndex("lotacao")));
