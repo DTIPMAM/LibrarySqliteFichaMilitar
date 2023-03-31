@@ -78,7 +78,7 @@ public class DBFichaMilitarHelper extends SQLiteOpenHelper {
                 " nome VARCHAR(30), status INT, data_inicio DATE, data_termino DATE, mensagem VARCHAR(30)) ;");
 
         //inicio version 3
-        db.execSQL("CREATE TABLE declaracao_bens( _id INTEGER PRIMARY KEY, id_tipo_bens INT, id_pessoa INT, " +
+        db.execSQL("CREATE TABLE declaracao_bens( _id INTEGER PRIMARY KEY, id_bens INT, id_pessoa INT, " +
                  "data_criacao DATE, apresentou_decla_bens VARCHAR(4), " +
                 "acumula_cargo_funcao VARCHAR(4), descr VARCHAR(300), valor_bem DECIMAL(10), observacoes VARCHAR(255));");
 
@@ -90,7 +90,7 @@ public class DBFichaMilitarHelper extends SQLiteOpenHelper {
 
         if (newV == Version && oldV == Version - 1) {
 
-            db.execSQL("CREATE TABLE declaracao_bens( _id INTEGER PRIMARY KEY, id_tipo_bens INT, id_declaracao INT, id_pessoa INT, " +
+            db.execSQL("CREATE TABLE declaracao_bens( _id INTEGER PRIMARY KEY, id_bens INT, id_declaracao INT, id_pessoa INT, " +
                     "data_criacao DATE, apresentou_decla_bens VARCHAR(4), " +
                     "acumula_cargo_funcao VARCHAR(4), descr VARCHAR(300), valor_bem DECIMAL(10), observacoes VARCHAR(255));");
 
