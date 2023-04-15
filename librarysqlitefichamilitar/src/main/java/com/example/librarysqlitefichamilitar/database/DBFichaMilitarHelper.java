@@ -82,6 +82,11 @@ public class DBFichaMilitarHelper extends SQLiteOpenHelper {
                  "data_criacao DATE, apresentou_decla_bens VARCHAR(4), " +
                 "acumula_cargo_funcao VARCHAR(4), descr VARCHAR(300), valor_bem DECIMAL(10), observacoes VARCHAR(255));");
 
+        db.execSQL("CREATE TABLE pessoas_banco_talento( _id INTEGER PRIMARY KEY, id_tipo_curso_academico INT, id_pessoa INT, id_banco_talentos INT, id_instituicao_ensino INT, " +
+                "nome_curso VARCHAR(100), inicio DATE, final DATE, completo VARCHAR(60), " +
+                "modalidade VARCHAR(60), carga_horaria INT);");
+
+
 
     }
 
@@ -95,6 +100,10 @@ public class DBFichaMilitarHelper extends SQLiteOpenHelper {
                     "acumula_cargo_funcao VARCHAR(4), descr VARCHAR(300), valor_bem DECIMAL(10), observacoes VARCHAR(255));");
 
             db.execSQL("ALTER TABLE pessoas_dados_militares ADD tempo_servico VARCHAR(10);");
+
+            db.execSQL("CREATE TABLE pessoas_banco_talento( _id INTEGER PRIMARY KEY, id_tipo_curso_academico INT, id_pessoa INT, id_banco_talentos INT, id_instituicao_ensino INT, " +
+                    "nome_curso VARCHAR(100), inicio DATE, final DATE, completo VARCHAR(60), " +
+                    "modalidade VARCHAR(60), carga_horaria INT);");
 
         }
 
