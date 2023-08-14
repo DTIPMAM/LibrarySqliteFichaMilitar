@@ -3,7 +3,6 @@
   <component name="FacetManager">
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
-        <option name="GRADLE_PROJECT_PATH" value=":librarysqlitefichamilitar" />
         <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" value="7.4.2" />
         <option name="LAST_KNOWN_AGP_VERSION" value="7.4.2" />
       </configuration>
@@ -22,8 +21,6 @@
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
-    <output url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar/build/intermediates/javac/debug/classes" />
-    <output-test url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar/build/intermediates/javac/debugUnitTest/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar">
       <excludeFolder url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar/.gradle" />
