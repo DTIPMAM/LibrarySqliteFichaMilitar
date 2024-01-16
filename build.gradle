@@ -1,13 +1,51 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
+apply plugin: 'maven-publish'
+
+def githubProperties = new Properties()
+githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
+
+def getVersionName = { ->
+    return "0.0.1"// Replace with version Name
+}
+
+def getArtificatId = { ->
+    return "librarysqiltefichamilitar" // Replace with library name ID == nome da sua library
+}
+
+
+publishing {
+
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/DTIPMAM/LibrarySqliteFichaMilitar")
+            credentials {
+                username = githubProperties['gpr.usr'] ?: System.getenv("GPR_USER")
+                password = githubProperties['gpr.key'] ?: System.getenv("GPR_API_KEY")
+            }
+        }
+    }
+
+    publications {
+        gpr(MavenPublication) {
+            groupId 'com.example' // Replace with group ID "nome do pacote da sua library " ex: br.com.msm.mylibrary == br.com.msm
+            artifactId getArtificatId()
+            version getVersionName()
+            //caminho do diretorio da saida do arquvio .aar obs: no menu > gradle execute o build dentro da sua library
+            artifact("$projectDir/librarysqiltefichamilitar/build/outputs/aar/${getArtificatId()}-release.aar")
+
+        }
+    }
+}
+
 buildscript{
     repositories{
         google()
         mavenCentral()
-
     }
     dependencies{
-        classpath 'com.android.tools.build:gradle:8.1.1'
+        classpath 'com.android.tools.build:gradle:8.1.4'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
