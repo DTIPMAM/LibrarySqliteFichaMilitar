@@ -1,0 +1,1907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.1.4" type="baseline" client="gradle" dependencies="false" name="AGP (8.1.4)" variant="all" version="8.1.4">
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId_afastamento(c.getInt(c.getColumnIndex(&quot;id_afastamento&quot;)));"
+        errorLine2="                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/AfastamentosDAO.java"
+            line="69"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId_pessoa(c.getInt(c.getColumnIndex(&quot;id_pessoa&quot;)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/AfastamentosDAO.java"
+            line="70"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setCi(c.getString(c.getColumnIndex(&quot;ci&quot;)));"
+        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/AfastamentosDAO.java"
+            line="71"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setNome(c.getString(c.getColumnIndex(&quot;nome&quot;)));"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/AfastamentosDAO.java"
+            line="72"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setStatus(c.getInt(c.getColumnIndex(&quot;status&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/AfastamentosDAO.java"
+            line="73"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setMensagem(c.getString(c.getColumnIndex(&quot;mensagem&quot;)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/AfastamentosDAO.java"
+            line="74"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setData_inicio(c.getString(c.getColumnIndex(&quot;data_inicio&quot;)));"
+        errorLine2="                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/AfastamentosDAO.java"
+            line="75"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setData_termino(c.getString(c.getColumnIndex(&quot;data_termino&quot;)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/AfastamentosDAO.java"
+            line="76"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId(c.getInt(c.getColumnIndex(&quot;_id&quot;)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/ContaBancariaDAO.java"
+            line="128"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId_pessoa(c.getInt(c.getColumnIndex(&quot;id_pessoa&quot;)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/ContaBancariaDAO.java"
+            line="129"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setBanco(c.getString(c.getColumnIndex(&quot;banco&quot;)));"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/ContaBancariaDAO.java"
+            line="130"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setNragencia(c.getString(c.getColumnIndex(&quot;nragencia&quot;)));"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/ContaBancariaDAO.java"
+            line="131"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setDvagencia(c.getString(c.getColumnIndex(&quot;dvagencia&quot;)));"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/ContaBancariaDAO.java"
+            line="132"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setNrconta(c.getString(c.getColumnIndex(&quot;nrconta&quot;)));"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/ContaBancariaDAO.java"
+            line="133"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setDvconta(c.getString(c.getColumnIndex(&quot;dvconta&quot;)));"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/ContaBancariaDAO.java"
+            line="134"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setTipoConta(c.getString(c.getColumnIndex(&quot;TipoConta&quot;)));"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/ContaBancariaDAO.java"
+            line="135"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId(c.getInt(c.getColumnIndex(&quot;_id&quot;)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/CursosMilitaresDAO.java"
+            line="202"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId_pessoa(c.getInt(c.getColumnIndex(&quot;id_pessoa&quot;)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/CursosMilitaresDAO.java"
+            line="203"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setTipoCursoMilitar(c.getString(c.getColumnIndex(&quot;tipoCursoMilitar&quot;)));"
+        errorLine2="                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/CursosMilitaresDAO.java"
+            line="204"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setNome_curso(c.getString(c.getColumnIndex(&quot;nome_curso&quot;)));"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/CursosMilitaresDAO.java"
+            line="205"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setInstituicaoEnsino(c.getString(c.getColumnIndex(&quot;instituicaoEnsino&quot;)));"
+        errorLine2="                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/CursosMilitaresDAO.java"
+            line="206"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setInicio(c.getString(c.getColumnIndex(&quot;inicio&quot;)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/CursosMilitaresDAO.java"
+            line="207"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setFinl(c.getString(c.getColumnIndex(&quot;finl&quot;)));"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/CursosMilitaresDAO.java"
+            line="208"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setCarga_horaria(c.getString(c.getColumnIndex(&quot;carga_horaria&quot;)));"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/CursosMilitaresDAO.java"
+            line="209"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        ci  = c.getString(c.getColumnIndex(&quot;idt_militar&quot;));"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="217"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setId(c.getInt(c.getColumnIndex(&quot;_id&quot;)));"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="283"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setCpf(c.getString(c.getColumnIndex(&quot;cpf&quot;)));"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="284"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setIdt_militar(c.getString(c.getColumnIndex(&quot;idt_militar&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="285"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setNome_guerra(c.getString(c.getColumnIndex(&quot;nome_guerra&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="286"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setAntiguidade(c.getString(c.getColumnIndex(&quot;antiguidade&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="287"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setData_exp_identidade(c.getString(c.getColumnIndex(&quot;data_exp_identidade&quot;)));"
+        errorLine2="                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="288"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setFuncao(c.getString(c.getColumnIndex(&quot;Funcao&quot;)));"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="289"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setPostoPatente(c.getString(c.getColumnIndex(&quot;PostoPatente&quot;)));"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="290"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setPostoQuadro(c.getString(c.getColumnIndex(&quot;PostoQuadro&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="291"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setFuncaoGratificada(c.getString(c.getColumnIndex(&quot;FuncaoGratificada&quot;)));"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="292"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setComportamento(c.getString(c.getColumnIndex(&quot;comportamento&quot;)));"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="293"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setData_inclusao(c.getString(c.getColumnIndex(&quot;data_inclusao&quot;)));"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="294"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setBg_inclusao(c.getString(c.getColumnIndex(&quot;bg_inclusao&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="295"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setBg_inclusao_data(c.getString(c.getColumnIndex(&quot;bg_inclusao_data&quot;)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="296"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setData_exclusao(c.getString(c.getColumnIndex(&quot;data_exclusao&quot;)));"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="297"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setBg_exclusao(c.getString(c.getColumnIndex(&quot;bg_exclusao&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="298"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setBg_exclusao_data(c.getString(c.getColumnIndex(&quot;bg_exclusao_data&quot;)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="299"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setTamanho_calca(c.getString(c.getColumnIndex(&quot;tamanho_calca&quot;)));"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="300"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setTamanho_camisa(c.getString(c.getColumnIndex(&quot;tamanho_camisa&quot;)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="301"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setTamanho_sapato(c.getString(c.getColumnIndex(&quot;tamanho_sapato&quot;)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="302"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setTamanho_gorro(c.getString(c.getColumnIndex(&quot;tamanho_gorro&quot;)));"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="303"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setTamanho_gandola(c.getString(c.getColumnIndex(&quot;tamanho_gandola&quot;)));"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="304"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setTamanho_calca_instrucao(c.getString(c.getColumnIndex(&quot;tamanho_calca_instrucao&quot;)));"
+        errorLine2="                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="305"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setTamanho_canicola(c.getString(c.getColumnIndex(&quot;tamanho_canicola&quot;)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="306"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setTamanho_calcao_tfm(c.getString(c.getColumnIndex(&quot;tamanho_calcao_tfm&quot;)));"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="307"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setTamanho_coturno(c.getString(c.getColumnIndex(&quot;tamanho_coturno&quot;)));"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="308"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setTamanho_saia(c.getString(c.getColumnIndex(&quot;tamanho_saia&quot;)));"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="309"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setData_atualiz(c.getString(c.getColumnIndex(&quot;data_atualiz&quot;)));"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="310"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setWhoupdate(c.getString(c.getColumnIndex(&quot;whoupdate&quot;)));"
+        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="311"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setTempo_servico(c.getString(c.getColumnIndex(&quot;tempo_servico&quot;)));"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="312"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setLotacao(c.getString(c.getColumnIndex(&quot;lotacao&quot;)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="315"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setStatus(c.getString(c.getColumnIndex(&quot;status&quot;)));"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="316"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setSituacao(c.getString(c.getColumnIndex(&quot;situacao&quot;)));"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="317"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setBg_inclusao(c.getString(c.getColumnIndex(&quot;bg_inclusao&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="322"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setBg_inclusao_data(c.getString(c.getColumnIndex(&quot;bg_inclusao_data&quot;)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="323"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setData_inclusao(c.getString(c.getColumnIndex(&quot;data_inclusao&quot;)));"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="324"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setBg_exclusao(c.getString(c.getColumnIndex(&quot;bg_exclusao&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="326"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setBg_exclusao_data(c.getString(c.getColumnIndex(&quot;bg_exclusao_data&quot;)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="327"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        vo.setData_exclusao(c.getString(c.getColumnIndex(&quot;data_exclusao&quot;)));"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="328"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setCpf(c.getString(c.getColumnIndex(&quot;cpf&quot;)));"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="151"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setRg(c.getString(c.getColumnIndex(&quot;rg&quot;)));"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="152"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setMatricula(c.getString(c.getColumnIndex(&quot;matricula&quot;)));"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="153"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setData_nasc(c.getString(c.getColumnIndex(&quot;data_nasc&quot;)));"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="154"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setNome(c.getString(c.getColumnIndex(&quot;nome&quot;)));"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="155"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setNome_pai(c.getString(c.getColumnIndex(&quot;nome_pai&quot;)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="156"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setNome_mae(c.getString(c.getColumnIndex(&quot;nome_mae&quot;)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="157"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setNaturaldo(c.getString(c.getColumnIndex(&quot;naturaldo&quot;)));"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="158"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setCidadenatal(c.getString(c.getColumnIndex(&quot;cidadenatal&quot;)));"
+        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="159"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setAlistmilitar(c.getString(c.getColumnIndex(&quot;alistmilitar&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="160"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setDsexo(c.getString(c.getColumnIndex(&quot;dsexo&quot;)));"
+        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="161"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setEstado_civil(c.getString(c.getColumnIndex(&quot;estado_civil&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="162"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setReligiao(c.getString(c.getColumnIndex(&quot;religiao&quot;)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="163"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setCep(c.getString(c.getColumnIndex(&quot;cep&quot;)));"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="164"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setEstado(c.getString(c.getColumnIndex(&quot;estado&quot;)));"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="165"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setCidade(c.getString(c.getColumnIndex(&quot;cidade&quot;)));"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="166"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setBairro(c.getString(c.getColumnIndex(&quot;bairro&quot;)));"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="167"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setLogradouro(c.getString(c.getColumnIndex(&quot;logradouro&quot;)));"
+        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="168"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setComplemento(c.getString(c.getColumnIndex(&quot;complemento&quot;)));"
+        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="169"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setNumero(c.getString(c.getColumnIndex(&quot;numero&quot;)));"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="170"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setTelefone_fixo_pessoal(c.getString(c.getColumnIndex(&quot;telefone_fixo_pessoal&quot;)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="171"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setTelefone_celular_pessoal1(c.getString(c.getColumnIndex(&quot;telefone_celular_pessoal1&quot;)));"
+        errorLine2="                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="172"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setTelefone_celular_pessoal2(c.getString(c.getColumnIndex(&quot;telefone_celular_pessoal2&quot;)));"
+        errorLine2="                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="173"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setTelefone_celular_corporativo(c.getString(c.getColumnIndex(&quot;telefone_celular_corporativo&quot;)));"
+        errorLine2="                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="174"
+            column="55"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setEmail_institucional(c.getString(c.getColumnIndex(&quot;email_institucional&quot;)));"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="175"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setEmail_pessoal(c.getString(c.getColumnIndex(&quot;email_pessoal&quot;)));"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="176"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setUpdate_username(c.getString(c.getColumnIndex(&quot;whoupdate&quot;)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="177"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setWhoupdate(c.getString(c.getColumnIndex(&quot;whoupdate&quot;)));"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="178"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setData_atualiz(c.getString(c.getColumnIndex(&quot;data_atualiz&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="179"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setPis_pasep(c.getString(c.getColumnIndex(&quot;pis_pasep&quot;)));"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="182"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setCtps_numero(c.getString(c.getColumnIndex(&quot;ctps_numero&quot;)));"
+        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="183"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setCtps_serie(c.getString(c.getColumnIndex(&quot;ctps_serie&quot;)));"
+        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="184"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setCtps_uf(c.getString(c.getColumnIndex(&quot;ctps_uf&quot;)));"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="185"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setNr_titulo(c.getString(c.getColumnIndex(&quot;nr_titulo&quot;)));"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="189"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setUf(c.getString(c.getColumnIndex(&quot;uf&quot;)));"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="190"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setZona(c.getString(c.getColumnIndex(&quot;zona&quot;)));"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="191"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setSecao(c.getString(c.getColumnIndex(&quot;secao&quot;)));"
+        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="192"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setNro_registro(c.getString(c.getColumnIndex(&quot;nro_registro&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="195"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setCategoria(c.getString(c.getColumnIndex(&quot;Categoria&quot;)));"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="196"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setData_validade(c.getString(c.getColumnIndex(&quot;data_validade&quot;)));"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="197"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setBarba(c.getString(c.getColumnIndex(&quot;barba&quot;)));"
+        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="200"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setBigode(c.getString(c.getColumnIndex(&quot;bigode&quot;)));"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="201"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setCabCor(c.getString(c.getColumnIndex(&quot;cabCor&quot;)));"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="202"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setCabTipo(c.getString(c.getColumnIndex(&quot;cabTipo&quot;)));"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="203"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setCabTom(c.getString(c.getColumnIndex(&quot;cabTom&quot;)));"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="204"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setCutis(c.getString(c.getColumnIndex(&quot;cutis&quot;)));"
+        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="205"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setOlhosCor(c.getString(c.getColumnIndex(&quot;olhosCor&quot;)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="206"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        v.setOlhostom(c.getString(c.getColumnIndex(&quot;olhostom&quot;)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosPessoiasDAO.java"
+            line="207"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId(c.getInt(c.getColumnIndex(&quot;_id&quot;)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DependentesDAO.java"
+            line="132"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId_pessoa(c.getInt(c.getColumnIndex(&quot;id_pessoa&quot;)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DependentesDAO.java"
+            line="133"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setNome_dependente(c.getString(c.getColumnIndex(&quot;nome_dependente&quot;)));"
+        errorLine2="                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DependentesDAO.java"
+            line="134"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setCpf(c.getString(c.getColumnIndex(&quot;cpf&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DependentesDAO.java"
+            line="135"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setCi(c.getString(c.getColumnIndex(&quot;ci&quot;)));"
+        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DependentesDAO.java"
+            line="136"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setParentesco(c.getString(c.getColumnIndex(&quot;parentesco&quot;)));"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DependentesDAO.java"
+            line="137"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setData_nascimento(c.getString(c.getColumnIndex(&quot;data_nascimento&quot;)));"
+        errorLine2="                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DependentesDAO.java"
+            line="138"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setTipo_boletim(c.getString(c.getColumnIndex(&quot;tipo_boletim&quot;)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DependentesDAO.java"
+            line="139"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setNumero_boletim(c.getString(c.getColumnIndex(&quot;numero_boletim&quot;)));"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DependentesDAO.java"
+            line="140"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setData_boletim(c.getString(c.getColumnIndex(&quot;data_boletim&quot;)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DependentesDAO.java"
+            line="141"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId(c.getInt(c.getColumnIndex(&quot;_id&quot;)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DispensasMedicasDAO.java"
+            line="65"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId_pessoa(c.getInt(c.getColumnIndex(&quot;id_pessoa&quot;)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DispensasMedicasDAO.java"
+            line="66"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setData_inicio(c.getString(c.getColumnIndex(&quot;data_inicio&quot;)));"
+        errorLine2="                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DispensasMedicasDAO.java"
+            line="67"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setData_termino(c.getString(c.getColumnIndex(&quot;data_termino&quot;)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DispensasMedicasDAO.java"
+            line="68"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setData_boletim(c.getString(c.getColumnIndex(&quot;data_boletim&quot;)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DispensasMedicasDAO.java"
+            line="69"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setTipo_boletim(c.getString(c.getColumnIndex(&quot;tipo_boletim&quot;)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DispensasMedicasDAO.java"
+            line="70"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setNumero_boletim(c.getString(c.getColumnIndex(&quot;numero_boletim&quot;)));"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DispensasMedicasDAO.java"
+            line="71"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setCid(c.getString(c.getColumnIndex(&quot;cid&quot;)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DispensasMedicasDAO.java"
+            line="72"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId(c.getInt(c.getColumnIndex(&quot;_id&quot;)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/FormacaoAcademicaDAO.java"
+            line="149"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId_pessoa(c.getInt(c.getColumnIndex(&quot;id_pessoa&quot;)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/FormacaoAcademicaDAO.java"
+            line="150"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setArea(c.getString(c.getColumnIndex(&quot;area&quot;)));"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/FormacaoAcademicaDAO.java"
+            line="151"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setNome_curso(c.getString(c.getColumnIndex(&quot;nome_curso&quot;)));"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/FormacaoAcademicaDAO.java"
+            line="152"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setInstituicao(c.getString(c.getColumnIndex(&quot;instituicao&quot;)));"
+        errorLine2="                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/FormacaoAcademicaDAO.java"
+            line="153"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setFinl(c.getString(c.getColumnIndex(&quot;finl&quot;)));"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/FormacaoAcademicaDAO.java"
+            line="154"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setCarga_horaria(c.getString(c.getColumnIndex(&quot;carga_horaria&quot;)));"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/FormacaoAcademicaDAO.java"
+            line="155"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setCompleto(c.getString(c.getColumnIndex(&quot;completo&quot;)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/FormacaoAcademicaDAO.java"
+            line="156"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId_pessoa(c.getInt(c.getColumnIndex(&quot;id_pessoa&quot;)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/GrauInstrucaoDAO.java"
+            line="94"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setGrauInstrucao(c.getString(c.getColumnIndex(&quot;grauInstrucao&quot;)));"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/GrauInstrucaoDAO.java"
+            line="95"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId(c.getInt(c.getColumnIndex(&quot;_id&quot;)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/MedalhasCondecoracoesDAO.java"
+            line="128"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId_pessoa(c.getInt(c.getColumnIndex(&quot;id_pessoa&quot;)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/MedalhasCondecoracoesDAO.java"
+            line="129"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setMedalhaCondecoracao(c.getString(c.getColumnIndex(&quot;medalhaCondecoracao&quot;)));"
+        errorLine2="                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/MedalhasCondecoracoesDAO.java"
+            line="130"
+            column="55"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setData_condecoracao(c.getString(c.getColumnIndex(&quot;data_condecoracao&quot;)));"
+        errorLine2="                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/MedalhasCondecoracoesDAO.java"
+            line="131"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setData_boletim(c.getString(c.getColumnIndex(&quot;data_boletim&quot;)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/MedalhasCondecoracoesDAO.java"
+            line="132"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setNumero_boletim(c.getString(c.getColumnIndex(&quot;numero_boletim&quot;)));"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/MedalhasCondecoracoesDAO.java"
+            line="133"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId(c.getInt(c.getColumnIndex(&quot;_id&quot;)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/PromocoesDAO.java"
+            line="198"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId_pessoa(c.getInt(c.getColumnIndex(&quot;id_pessoa&quot;)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/PromocoesDAO.java"
+            line="199"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setTipoPromocao(c.getString(c.getColumnIndex(&quot;TipoPromocao&quot;)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/PromocoesDAO.java"
+            line="200"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setDescricao_promocao(c.getString(c.getColumnIndex(&quot;descricao_promocao&quot;)));"
+        errorLine2="                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/PromocoesDAO.java"
+            line="201"
+            column="54"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setData_boletim(c.getString(c.getColumnIndex(&quot;data_boletim&quot;)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/PromocoesDAO.java"
+            line="202"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setNumero_boletim(c.getString(c.getColumnIndex(&quot;numero_boletim&quot;)));"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/PromocoesDAO.java"
+            line="203"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId(c.getInt(c.getColumnIndex(&quot;_id&quot;)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/PunicoesDAO.java"
+            line="202"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setId_pessoa(c.getInt(c.getColumnIndex(&quot;id_pessoa&quot;)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/PunicoesDAO.java"
+            line="203"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setData_punicao(c.getString(c.getColumnIndex(&quot;data_punicao&quot;)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/PunicoesDAO.java"
+            line="204"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setDescricao_punicao(c.getString(c.getColumnIndex(&quot;descricao_punicao&quot;)));"
+        errorLine2="                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/PunicoesDAO.java"
+            line="205"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setData_boletim(c.getString(c.getColumnIndex(&quot;data_boletim&quot;)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/PunicoesDAO.java"
+            line="206"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="                vo.setNumero_boletim(c.getString(c.getColumnIndex(&quot;numero_boletim&quot;)));"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/PunicoesDAO.java"
+            line="207"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/AfastamentosDAO.java"
+            line="167"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/BancoDeTalentosDAO.java"
+            line="175"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/ContaBancariaDAO.java"
+            line="151"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/CursosMilitaresDAO.java"
+            line="107"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DadosMilitaresDAO.java"
+            line="176"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DeclaracaoPatrimonioDAO.java"
+            line="174"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DependentesDAO.java"
+            line="159"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/DispensasMedicasDAO.java"
+            line="162"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/ElogiosDAO.java"
+            line="109"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/FormacaoAcademicaDAO.java"
+            line="125"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/GrauInstrucaoDAO.java"
+            line="82"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="            Cursor c  = db.query(table_name, colunas, &quot;token = ?&quot;, new String[]{codigo}, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/GrauInstrucaoDAO.java"
+            line="90"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/MedalhasCondecoracoesDAO.java"
+            line="149"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/PromocoesDAO.java"
+            line="106"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);"
+        errorLine2="                           ~~~~~">
+        <location
+            file="src/main/java/com/example/librarysqlitefichamilitar/classes_dao/PunicoesDAO.java"
+            line="122"
+            column="28"/>
+    </issue>
+
+</issues>

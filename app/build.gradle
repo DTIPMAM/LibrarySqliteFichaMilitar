@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android{
     compileSdk 34
-    buildToolsVersion = "31.0.1"
     defaultConfig{
         applicationId "com.example.librarysqiltefichamilitar"
         minSdk 23

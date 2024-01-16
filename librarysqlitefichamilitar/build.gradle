@@ -3,7 +3,6 @@ apply plugin: 'com.android.library'
 
 android{
     compileSdk 34
-    buildToolsVersion = "31.0.1"
     defaultConfig{
         minSdk 23
         targetSdk 34
@@ -20,7 +19,14 @@ android{
     }
     namespace 'com.example.librarysqlitefichamilitar'
 
+    android {
+        lint {
+            baseline = file("lint-baseline.xml")
+        }
+    }
+
 }
+
 
 dependencies{
     implementation fileTree(dir: 'libs', include: ['*.jar'])

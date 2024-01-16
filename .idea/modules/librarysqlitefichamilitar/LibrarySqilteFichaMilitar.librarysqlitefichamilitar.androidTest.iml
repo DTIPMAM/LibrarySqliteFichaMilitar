@@ -18,7 +18,9 @@
     <output-test url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar/build/intermediates/javac/debugAndroidTest/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar/build/generated/ap_generated_sources/debugAndroidTest/out" />
-    <content url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar/build/generated/res/resValues/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar/build/generated/res/resValues/androidTest/debug">
+      <sourceFolder url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar/build/generated/res/resValues/androidTest/debug" type="java-test-resource" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar/build/generated/source/buildConfig/androidTest/debug" />
     <content url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar/src/androidTest" />
     <content url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar/src/androidTestDebug" />
