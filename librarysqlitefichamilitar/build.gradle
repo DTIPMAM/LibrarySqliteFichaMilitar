@@ -24,7 +24,10 @@ android{
             baseline = file("lint-baseline.xml")
         }
     }
-
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_18
+        targetCompatibility JavaVersion.VERSION_18
+    }
 }
 
 
