@@ -24,7 +24,7 @@
     <content url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar/build/generated/source/buildConfig/androidTest/debug" />
     <content url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar/src/androidTest" />
     <content url="file://$MODULE_DIR$/../../../librarysqlitefichamilitar/src/androidTestDebug" />
-    <orderEntry type="jdk" jdkName="Android API 33, extension level 3 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 34, extension level 7 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="LibrarySqilteFichaMilitar.librarysqlitefichamilitar.main" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.ext:junit:1.1.5@aar" level="project" />
