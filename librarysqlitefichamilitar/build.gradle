@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
 android{
     compileSdk 35
     defaultConfig{
@@ -8,19 +7,12 @@ android{
         consumerProguardFiles 'consumer-rules.pro'
     }
 
-    buildTypes{
-        release{
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
+
     namespace 'com.example.librarysqlitefichamilitar'
 
 }
 
 dependencies{
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     implementation 'androidx.appcompat:appcompat:1.7.1'
     testImplementation 'junit:junit:4.13.2'
 }
