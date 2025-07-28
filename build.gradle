@@ -8,8 +8,6 @@ buildscript{
     }
     dependencies{
         classpath 'com.android.tools.build:gradle:8.8.2'
-        // gradle superior with erro no lib boletim geral
-        classpath 'com.google.firebase:firebase-crashlytics-gradle:3.0.5'
         classpath 'com.google.gms:google-services:4.4.3'
     }
 }
