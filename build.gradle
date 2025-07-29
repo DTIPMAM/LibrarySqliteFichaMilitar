@@ -1,3 +1,14 @@
+apply plugin: 'maven-publish'
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'io.jitpack'
+            artifactId = 'librarysqlitefichamilitar'
+            version = '1.0'
+        }
+    }
+}
+
 
 buildscript{
     repositories{
