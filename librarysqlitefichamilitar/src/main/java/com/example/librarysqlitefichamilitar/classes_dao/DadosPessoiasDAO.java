@@ -1,5 +1,6 @@
 package com.example.librarysqlitefichamilitar.classes_dao;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -134,6 +135,7 @@ public class DadosPessoiasDAO {
     }
 
 
+ 
     public DadosPessoaisVO getDadosPessoais(String IdPessoa){
 
         SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
@@ -148,63 +150,63 @@ public class DadosPessoiasDAO {
             return null;
         }
         DadosPessoaisVO v = new DadosPessoaisVO();
-        v.setCpf(c.getString(c.getColumnIndex("cpf")));
-        v.setRg(c.getString(c.getColumnIndex("rg")));
-        v.setMatricula(c.getString(c.getColumnIndex("matricula")));
-        v.setData_nasc(c.getString(c.getColumnIndex("data_nasc")));
-        v.setNome(c.getString(c.getColumnIndex("nome")));
-        v.setNome_pai(c.getString(c.getColumnIndex("nome_pai")));
-        v.setNome_mae(c.getString(c.getColumnIndex("nome_mae")));
-        v.setNaturaldo(c.getString(c.getColumnIndex("naturaldo")));
-        v.setCidadenatal(c.getString(c.getColumnIndex("cidadenatal")));
-        v.setAlistmilitar(c.getString(c.getColumnIndex("alistmilitar")));
-        v.setDsexo(c.getString(c.getColumnIndex("dsexo")));
-        v.setEstado_civil(c.getString(c.getColumnIndex("estado_civil")));
-        v.setReligiao(c.getString(c.getColumnIndex("religiao")));
-        v.setCep(c.getString(c.getColumnIndex("cep")));
-        v.setEstado(c.getString(c.getColumnIndex("estado")));
-        v.setCidade(c.getString(c.getColumnIndex("cidade")));
-        v.setBairro(c.getString(c.getColumnIndex("bairro")));
-        v.setLogradouro(c.getString(c.getColumnIndex("logradouro")));
-        v.setComplemento(c.getString(c.getColumnIndex("complemento")));
-        v.setNumero(c.getString(c.getColumnIndex("numero")));
-        v.setTelefone_fixo_pessoal(c.getString(c.getColumnIndex("telefone_fixo_pessoal")));
-        v.setTelefone_celular_pessoal1(c.getString(c.getColumnIndex("telefone_celular_pessoal1")));
-        v.setTelefone_celular_pessoal2(c.getString(c.getColumnIndex("telefone_celular_pessoal2")));
-        v.setTelefone_celular_corporativo(c.getString(c.getColumnIndex("telefone_celular_corporativo")));
-        v.setEmail_institucional(c.getString(c.getColumnIndex("email_institucional")));
-        v.setEmail_pessoal(c.getString(c.getColumnIndex("email_pessoal")));
-        v.setUpdate_username(c.getString(c.getColumnIndex("whoupdate")));
-        v.setWhoupdate(c.getString(c.getColumnIndex("whoupdate")));
-        v.setData_atualiz(c.getString(c.getColumnIndex("data_atualiz")));
+        v.setCpf(c.getString(c.getColumnIndexOrThrow("cpf")));
+        v.setRg(c.getString(c.getColumnIndexOrThrow("rg")));
+        v.setMatricula(c.getString(c.getColumnIndexOrThrow("matricula")));
+        v.setData_nasc(c.getString(c.getColumnIndexOrThrow("data_nasc")));
+        v.setNome(c.getString(c.getColumnIndexOrThrow("nome")));
+        v.setNome_pai(c.getString(c.getColumnIndexOrThrow("nome_pai")));
+        v.setNome_mae(c.getString(c.getColumnIndexOrThrow("nome_mae")));
+        v.setNaturaldo(c.getString(c.getColumnIndexOrThrow("naturaldo")));
+        v.setCidadenatal(c.getString(c.getColumnIndexOrThrow("cidadenatal")));
+        v.setAlistmilitar(c.getString(c.getColumnIndexOrThrow("alistmilitar")));
+        v.setDsexo(c.getString(c.getColumnIndexOrThrow("dsexo")));
+        v.setEstado_civil(c.getString(c.getColumnIndexOrThrow("estado_civil")));
+        v.setReligiao(c.getString(c.getColumnIndexOrThrow("religiao")));
+        v.setCep(c.getString(c.getColumnIndexOrThrow("cep")));
+        v.setEstado(c.getString(c.getColumnIndexOrThrow("estado")));
+        v.setCidade(c.getString(c.getColumnIndexOrThrow("cidade")));
+        v.setBairro(c.getString(c.getColumnIndexOrThrow("bairro")));
+        v.setLogradouro(c.getString(c.getColumnIndexOrThrow("logradouro")));
+        v.setComplemento(c.getString(c.getColumnIndexOrThrow("complemento")));
+        v.setNumero(c.getString(c.getColumnIndexOrThrow("numero")));
+        v.setTelefone_fixo_pessoal(c.getString(c.getColumnIndexOrThrow("telefone_fixo_pessoal")));
+        v.setTelefone_celular_pessoal1(c.getString(c.getColumnIndexOrThrow("telefone_celular_pessoal1")));
+        v.setTelefone_celular_pessoal2(c.getString(c.getColumnIndexOrThrow("telefone_celular_pessoal2")));
+        v.setTelefone_celular_corporativo(c.getString(c.getColumnIndexOrThrow("telefone_celular_corporativo")));
+        v.setEmail_institucional(c.getString(c.getColumnIndexOrThrow("email_institucional")));
+        v.setEmail_pessoal(c.getString(c.getColumnIndexOrThrow("email_pessoal")));
+        v.setUpdate_username(c.getString(c.getColumnIndexOrThrow("whoupdate")));
+        v.setWhoupdate(c.getString(c.getColumnIndexOrThrow("whoupdate")));
+        v.setData_atualiz(c.getString(c.getColumnIndexOrThrow("data_atualiz")));
 
         //dados profissionais
-        v.setPis_pasep(c.getString(c.getColumnIndex("pis_pasep")));
-        v.setCtps_numero(c.getString(c.getColumnIndex("ctps_numero")));
-        v.setCtps_serie(c.getString(c.getColumnIndex("ctps_serie")));
-        v.setCtps_uf(c.getString(c.getColumnIndex("ctps_uf")));
+        v.setPis_pasep(c.getString(c.getColumnIndexOrThrow("pis_pasep")));
+        v.setCtps_numero(c.getString(c.getColumnIndexOrThrow("ctps_numero")));
+        v.setCtps_serie(c.getString(c.getColumnIndexOrThrow("ctps_serie")));
+        v.setCtps_uf(c.getString(c.getColumnIndexOrThrow("ctps_uf")));
 
 
         //dados profissionais
-        v.setNr_titulo(c.getString(c.getColumnIndex("nr_titulo")));
-        v.setUf(c.getString(c.getColumnIndex("uf")));
-        v.setZona(c.getString(c.getColumnIndex("zona")));
-        v.setSecao(c.getString(c.getColumnIndex("secao")));
+        v.setNr_titulo(c.getString(c.getColumnIndexOrThrow("nr_titulo")));
+        v.setUf(c.getString(c.getColumnIndexOrThrow("uf")));
+        v.setZona(c.getString(c.getColumnIndexOrThrow("zona")));
+        v.setSecao(c.getString(c.getColumnIndexOrThrow("secao")));
 
         //habilitação
-        v.setNro_registro(c.getString(c.getColumnIndex("nro_registro")));
-        v.setCategoria(c.getString(c.getColumnIndex("Categoria")));
-        v.setData_validade(c.getString(c.getColumnIndex("data_validade")));
+        v.setNro_registro(c.getString(c.getColumnIndexOrThrow("nro_registro")));
+        v.setCategoria(c.getString(c.getColumnIndexOrThrow("Categoria")));
+        v.setData_validade(c.getString(c.getColumnIndexOrThrow("data_validade")));
 
         //fisionomia
-        v.setBarba(c.getString(c.getColumnIndex("barba")));
-        v.setBigode(c.getString(c.getColumnIndex("bigode")));
-        v.setCabCor(c.getString(c.getColumnIndex("cabCor")));
-        v.setCabTipo(c.getString(c.getColumnIndex("cabTipo")));
-        v.setCabTom(c.getString(c.getColumnIndex("cabTom")));
-        v.setCutis(c.getString(c.getColumnIndex("cutis")));
-        v.setOlhosCor(c.getString(c.getColumnIndex("olhosCor")));
-        v.setOlhostom(c.getString(c.getColumnIndex("olhostom")));
+        v.setBarba(c.getString(c.getColumnIndexOrThrow("barba")));
+        v.setBigode(c.getString(c.getColumnIndexOrThrow("bigode")));
+        v.setCabCor(c.getString(c.getColumnIndexOrThrow("cabCor")));
+        v.setCabTipo(c.getString(c.getColumnIndexOrThrow("cabTipo")));
+        v.setCabTom(c.getString(c.getColumnIndexOrThrow("cabTom")));
+        v.setCutis(c.getString(c.getColumnIndexOrThrow("cutis")));
+        v.setOlhosCor(c.getString(c.getColumnIndexOrThrow("olhosCor")));
+        v.setOlhostom(c.getString(c.getColumnIndexOrThrow("olhostom")));
 
         c.close();
         db.close();

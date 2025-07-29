@@ -1,5 +1,6 @@
 package com.example.librarysqlitefichamilitar.classes_dao;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -109,6 +110,7 @@ public class DependentesDAO {
             return false;
         } }
 
+ 
     public ArrayList<DependentesVO> getListaVO(String id_pessoa) {
 
         ArrayList<DependentesVO> lista = new ArrayList<>();
@@ -129,16 +131,16 @@ public class DependentesDAO {
             "tipo_boletim","numero_boletim","data_boletim"*/
             do {
                 DependentesVO vo = new DependentesVO();
-                vo.setId(c.getInt(c.getColumnIndex("_id")));
-                vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
-                vo.setNome_dependente(c.getString(c.getColumnIndex("nome_dependente")));
-                vo.setCpf(c.getString(c.getColumnIndex("cpf")));
-                vo.setCi(c.getString(c.getColumnIndex("ci")));
-                vo.setParentesco(c.getString(c.getColumnIndex("parentesco")));
-                vo.setData_nascimento(c.getString(c.getColumnIndex("data_nascimento")));
-                vo.setTipo_boletim(c.getString(c.getColumnIndex("tipo_boletim")));
-                vo.setNumero_boletim(c.getString(c.getColumnIndex("numero_boletim")));
-                vo.setData_boletim(c.getString(c.getColumnIndex("data_boletim")));
+                vo.setId(c.getInt(c.getColumnIndexOrThrow("_id")));
+                vo.setId_pessoa(c.getInt(c.getColumnIndexOrThrow("id_pessoa")));
+                vo.setNome_dependente(c.getString(c.getColumnIndexOrThrow("nome_dependente")));
+                vo.setCpf(c.getString(c.getColumnIndexOrThrow("cpf")));
+                vo.setCi(c.getString(c.getColumnIndexOrThrow("ci")));
+                vo.setParentesco(c.getString(c.getColumnIndexOrThrow("parentesco")));
+                vo.setData_nascimento(c.getString(c.getColumnIndexOrThrow("data_nascimento")));
+                vo.setTipo_boletim(c.getString(c.getColumnIndexOrThrow("tipo_boletim")));
+                vo.setNumero_boletim(c.getString(c.getColumnIndexOrThrow("numero_boletim")));
+                vo.setData_boletim(c.getString(c.getColumnIndexOrThrow("data_boletim")));
                 lista.add(vo);
 
             } while (c.moveToNext());

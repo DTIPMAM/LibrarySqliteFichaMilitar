@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LibrarySqilteFichaMilitar.iml" filepath="$PROJECT_DIR$/.idea/modules/LibrarySqilteFichaMilitar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/LibrarySqilteFichaMilitar.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/LibrarySqilteFichaMilitar.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/LibrarySqilteFichaMilitar.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/LibrarySqilteFichaMilitar.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/LibrarySqilteFichaMilitar.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/LibrarySqilteFichaMilitar.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/LibrarySqilteFichaMilitar.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/LibrarySqilteFichaMilitar.app.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqilteFichaMilitar.librarysqlitefichamilitar.iml" filepath="$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqilteFichaMilitar.librarysqlitefichamilitar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqilteFichaMilitar.librarysqlitefichamilitar.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqilteFichaMilitar.librarysqlitefichamilitar.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqilteFichaMilitar.librarysqlitefichamilitar.main.iml" filepath="$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqilteFichaMilitar.librarysqlitefichamilitar.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqilteFichaMilitar.librarysqlitefichamilitar.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqilteFichaMilitar.librarysqlitefichamilitar.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LibrarySqliteFichaMilitar.iml" filepath="$PROJECT_DIR$/.idea/modules/LibrarySqliteFichaMilitar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/LibrarySqliteFichaMilitar.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/LibrarySqliteFichaMilitar.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/LibrarySqliteFichaMilitar.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/LibrarySqliteFichaMilitar.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/LibrarySqliteFichaMilitar.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/LibrarySqliteFichaMilitar.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/LibrarySqliteFichaMilitar.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/LibrarySqliteFichaMilitar.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqliteFichaMilitar.librarysqlitefichamilitar.iml" filepath="$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqliteFichaMilitar.librarysqlitefichamilitar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqliteFichaMilitar.librarysqlitefichamilitar.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqliteFichaMilitar.librarysqlitefichamilitar.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqliteFichaMilitar.librarysqlitefichamilitar.main.iml" filepath="$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqliteFichaMilitar.librarysqlitefichamilitar.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqliteFichaMilitar.librarysqlitefichamilitar.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/librarysqlitefichamilitar/LibrarySqliteFichaMilitar.librarysqlitefichamilitar.unitTest.iml" />
     </modules>
   </component>
 </project>

@@ -1,5 +1,6 @@
 package com.example.librarysqlitefichamilitar.classes_dao;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -179,6 +180,7 @@ public class CursosMilitaresDAO {
         return tiporetorn;
     }
 
+ 
     public ArrayList<CursosMilitaresVO> getListaVO(String id_pessoa) {
 
         ArrayList<CursosMilitaresVO> lista = new ArrayList<CursosMilitaresVO>();
@@ -199,14 +201,14 @@ public class CursosMilitaresDAO {
             do {
 
                 CursosMilitaresVO vo = new CursosMilitaresVO();
-                vo.setId(c.getInt(c.getColumnIndex("_id")));
-                vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
-                vo.setTipoCursoMilitar(c.getString(c.getColumnIndex("tipoCursoMilitar")));
-                vo.setNome_curso(c.getString(c.getColumnIndex("nome_curso")));
-                vo.setInstituicaoEnsino(c.getString(c.getColumnIndex("instituicaoEnsino")));
-                vo.setInicio(c.getString(c.getColumnIndex("inicio")));
-                vo.setFinl(c.getString(c.getColumnIndex("finl")));
-                vo.setCarga_horaria(c.getString(c.getColumnIndex("carga_horaria")));
+                vo.setId(c.getInt(c.getColumnIndexOrThrow("_id")));
+                vo.setId_pessoa(c.getInt(c.getColumnIndexOrThrow("id_pessoa")));
+                vo.setTipoCursoMilitar(c.getString(c.getColumnIndexOrThrow("tipoCursoMilitar")));
+                vo.setNome_curso(c.getString(c.getColumnIndexOrThrow("nome_curso")));
+                vo.setInstituicaoEnsino(c.getString(c.getColumnIndexOrThrow("instituicaoEnsino")));
+                vo.setInicio(c.getString(c.getColumnIndexOrThrow("inicio")));
+                vo.setFinl(c.getString(c.getColumnIndexOrThrow("finl")));
+                vo.setCarga_horaria(c.getString(c.getColumnIndexOrThrow("carga_horaria")));
                 lista.add(vo);
             }while (c.moveToNext());
             c.close();

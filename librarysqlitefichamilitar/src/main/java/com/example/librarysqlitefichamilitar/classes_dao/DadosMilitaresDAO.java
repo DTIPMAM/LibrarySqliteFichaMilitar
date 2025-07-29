@@ -1,5 +1,6 @@
 package com.example.librarysqlitefichamilitar.classes_dao;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -200,6 +201,7 @@ public class DadosMilitaresDAO {
         return excluir;
     }
 
+  
     public String buscarCI(String CI_CPF_Militar) {
        String ci = "";
         SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
@@ -214,7 +216,7 @@ public class DadosMilitaresDAO {
             db.close();
             return "";
         }
-        ci  = c.getString(c.getColumnIndex("idt_militar"));
+        ci  = c.getString(c.getColumnIndexOrThrow("idt_militar"));
         c.close();
         db.close();
         return ci;
@@ -265,6 +267,7 @@ public class DadosMilitaresDAO {
     }
 
 
+  
     public DadosMilitaresVO getDadosMilitares(String IdPessoa){
 
         SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
@@ -280,52 +283,52 @@ public class DadosMilitaresDAO {
         }
 
         DadosMilitaresVO vo = new DadosMilitaresVO();
-        vo.setId(c.getInt(c.getColumnIndex("_id")));
-        vo.setCpf(c.getString(c.getColumnIndex("cpf")));
-        vo.setIdt_militar(c.getString(c.getColumnIndex("idt_militar")));
-        vo.setNome_guerra(c.getString(c.getColumnIndex("nome_guerra")));
-        vo.setAntiguidade(c.getString(c.getColumnIndex("antiguidade")));
-        vo.setData_exp_identidade(c.getString(c.getColumnIndex("data_exp_identidade")));
-        vo.setFuncao(c.getString(c.getColumnIndex("Funcao")));
-        vo.setPostoPatente(c.getString(c.getColumnIndex("PostoPatente")));
-        vo.setPostoQuadro(c.getString(c.getColumnIndex("PostoQuadro")));
-        vo.setFuncaoGratificada(c.getString(c.getColumnIndex("FuncaoGratificada")));
-        vo.setComportamento(c.getString(c.getColumnIndex("comportamento")));
-        vo.setData_inclusao(c.getString(c.getColumnIndex("data_inclusao")));
-        vo.setBg_inclusao(c.getString(c.getColumnIndex("bg_inclusao")));
-        vo.setBg_inclusao_data(c.getString(c.getColumnIndex("bg_inclusao_data")));
-        vo.setData_exclusao(c.getString(c.getColumnIndex("data_exclusao")));
-        vo.setBg_exclusao(c.getString(c.getColumnIndex("bg_exclusao")));
-        vo.setBg_exclusao_data(c.getString(c.getColumnIndex("bg_exclusao_data")));
-        vo.setTamanho_calca(c.getString(c.getColumnIndex("tamanho_calca")));
-        vo.setTamanho_camisa(c.getString(c.getColumnIndex("tamanho_camisa")));
-        vo.setTamanho_sapato(c.getString(c.getColumnIndex("tamanho_sapato")));
-        vo.setTamanho_gorro(c.getString(c.getColumnIndex("tamanho_gorro")));
-        vo.setTamanho_gandola(c.getString(c.getColumnIndex("tamanho_gandola")));
-        vo.setTamanho_calca_instrucao(c.getString(c.getColumnIndex("tamanho_calca_instrucao")));
-        vo.setTamanho_canicola(c.getString(c.getColumnIndex("tamanho_canicola")));
-        vo.setTamanho_calcao_tfm(c.getString(c.getColumnIndex("tamanho_calcao_tfm")));
-        vo.setTamanho_coturno(c.getString(c.getColumnIndex("tamanho_coturno")));
-        vo.setTamanho_saia(c.getString(c.getColumnIndex("tamanho_saia")));
-        vo.setData_atualiz(c.getString(c.getColumnIndex("data_atualiz")));
-        vo.setWhoupdate(c.getString(c.getColumnIndex("whoupdate")));
-        vo.setTempo_servico(c.getString(c.getColumnIndex("tempo_servico")));
+        vo.setId(c.getInt(c.getColumnIndexOrThrow("_id")));
+        vo.setCpf(c.getString(c.getColumnIndexOrThrow("cpf")));
+        vo.setIdt_militar(c.getString(c.getColumnIndexOrThrow("idt_militar")));
+        vo.setNome_guerra(c.getString(c.getColumnIndexOrThrow("nome_guerra")));
+        vo.setAntiguidade(c.getString(c.getColumnIndexOrThrow("antiguidade")));
+        vo.setData_exp_identidade(c.getString(c.getColumnIndexOrThrow("data_exp_identidade")));
+        vo.setFuncao(c.getString(c.getColumnIndexOrThrow("Funcao")));
+        vo.setPostoPatente(c.getString(c.getColumnIndexOrThrow("PostoPatente")));
+        vo.setPostoQuadro(c.getString(c.getColumnIndexOrThrow("PostoQuadro")));
+        vo.setFuncaoGratificada(c.getString(c.getColumnIndexOrThrow("FuncaoGratificada")));
+        vo.setComportamento(c.getString(c.getColumnIndexOrThrow("comportamento")));
+        vo.setData_inclusao(c.getString(c.getColumnIndexOrThrow("data_inclusao")));
+        vo.setBg_inclusao(c.getString(c.getColumnIndexOrThrow("bg_inclusao")));
+        vo.setBg_inclusao_data(c.getString(c.getColumnIndexOrThrow("bg_inclusao_data")));
+        vo.setData_exclusao(c.getString(c.getColumnIndexOrThrow("data_exclusao")));
+        vo.setBg_exclusao(c.getString(c.getColumnIndexOrThrow("bg_exclusao")));
+        vo.setBg_exclusao_data(c.getString(c.getColumnIndexOrThrow("bg_exclusao_data")));
+        vo.setTamanho_calca(c.getString(c.getColumnIndexOrThrow("tamanho_calca")));
+        vo.setTamanho_camisa(c.getString(c.getColumnIndexOrThrow("tamanho_camisa")));
+        vo.setTamanho_sapato(c.getString(c.getColumnIndexOrThrow("tamanho_sapato")));
+        vo.setTamanho_gorro(c.getString(c.getColumnIndexOrThrow("tamanho_gorro")));
+        vo.setTamanho_gandola(c.getString(c.getColumnIndexOrThrow("tamanho_gandola")));
+        vo.setTamanho_calca_instrucao(c.getString(c.getColumnIndexOrThrow("tamanho_calca_instrucao")));
+        vo.setTamanho_canicola(c.getString(c.getColumnIndexOrThrow("tamanho_canicola")));
+        vo.setTamanho_calcao_tfm(c.getString(c.getColumnIndexOrThrow("tamanho_calcao_tfm")));
+        vo.setTamanho_coturno(c.getString(c.getColumnIndexOrThrow("tamanho_coturno")));
+        vo.setTamanho_saia(c.getString(c.getColumnIndexOrThrow("tamanho_saia")));
+        vo.setData_atualiz(c.getString(c.getColumnIndexOrThrow("data_atualiz")));
+        vo.setWhoupdate(c.getString(c.getColumnIndexOrThrow("whoupdate")));
+        vo.setTempo_servico(c.getString(c.getColumnIndexOrThrow("tempo_servico")));
 
         //lotacao
-        vo.setLotacao(c.getString(c.getColumnIndex("lotacao")));
-        vo.setStatus(c.getString(c.getColumnIndex("status")));
-        vo.setSituacao(c.getString(c.getColumnIndex("situacao")));
+        vo.setLotacao(c.getString(c.getColumnIndexOrThrow("lotacao")));
+        vo.setStatus(c.getString(c.getColumnIndexOrThrow("status")));
+        vo.setSituacao(c.getString(c.getColumnIndexOrThrow("situacao")));
 
 
 
         //Inclusao e Exclusao
-        vo.setBg_inclusao(c.getString(c.getColumnIndex("bg_inclusao")));
-        vo.setBg_inclusao_data(c.getString(c.getColumnIndex("bg_inclusao_data")));
-        vo.setData_inclusao(c.getString(c.getColumnIndex("data_inclusao")));
+        vo.setBg_inclusao(c.getString(c.getColumnIndexOrThrow("bg_inclusao")));
+        vo.setBg_inclusao_data(c.getString(c.getColumnIndexOrThrow("bg_inclusao_data")));
+        vo.setData_inclusao(c.getString(c.getColumnIndexOrThrow("data_inclusao")));
 
-        vo.setBg_exclusao(c.getString(c.getColumnIndex("bg_exclusao")));
-        vo.setBg_exclusao_data(c.getString(c.getColumnIndex("bg_exclusao_data")));
-        vo.setData_exclusao(c.getString(c.getColumnIndex("data_exclusao")));
+        vo.setBg_exclusao(c.getString(c.getColumnIndexOrThrow("bg_exclusao")));
+        vo.setBg_exclusao_data(c.getString(c.getColumnIndexOrThrow("bg_exclusao_data")));
+        vo.setData_exclusao(c.getString(c.getColumnIndexOrThrow("data_exclusao")));
 
 
         c.close();

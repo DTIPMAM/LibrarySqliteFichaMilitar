@@ -1,5 +1,6 @@
 package com.example.librarysqlitefichamilitar.classes_dao;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -9,8 +10,6 @@ import java.util.ArrayList;
 
 import com.example.librarysqlitefichamilitar.classes_vo.AfastamentosVO;
 import com.example.librarysqlitefichamilitar.database.DBFichaMilitarHelper;
-
-import static com.example.librarysqlitefichamilitar.util.Util.Tag;
 
 
 public class AfastamentosDAO {
@@ -66,14 +65,14 @@ public class AfastamentosDAO {
 
             do {
                 AfastamentosVO vo = new AfastamentosVO();
-                vo.setId_afastamento(c.getInt(c.getColumnIndex("id_afastamento")));
-                vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
-                vo.setCi(c.getString(c.getColumnIndex("ci")));
-                vo.setNome(c.getString(c.getColumnIndex("nome")));
-                vo.setStatus(c.getInt(c.getColumnIndex("status")));
-                vo.setMensagem(c.getString(c.getColumnIndex("mensagem")));
-                vo.setData_inicio(c.getString(c.getColumnIndex("data_inicio")));
-                vo.setData_termino(c.getString(c.getColumnIndex("data_termino")));
+                vo.setId_afastamento(c.getInt(c.getColumnIndexOrThrow("id_afastamento")));
+                vo.setId_pessoa(c.getInt(c.getColumnIndexOrThrow("id_pessoa")));
+                vo.setCi(c.getString(c.getColumnIndexOrThrow("ci")));
+                vo.setNome(c.getString(c.getColumnIndexOrThrow("nome")));
+                vo.setStatus(c.getInt(c.getColumnIndexOrThrow("status")));
+                vo.setMensagem(c.getString(c.getColumnIndexOrThrow("mensagem")));
+                vo.setData_inicio(c.getString(c.getColumnIndexOrThrow("data_inicio")));
+                vo.setData_termino(c.getString(c.getColumnIndexOrThrow("data_termino")));
                 lista.add(vo);
             }while (c.moveToNext());
             c.close();
@@ -89,14 +88,16 @@ public class AfastamentosDAO {
 
     public Cursor buscarTudo() {
         SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
-        Cursor c = db.query(table_name, colunas, null, null, null, null, null);
-        if (c == null) {
+        Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);
+        if (cursor == null) {
             return null;
-        } else if (!c.moveToFirst()) {
-            c.close();
+        } else if (!cursor.moveToFirst()) {
+            cursor.close();
+            db.close();
             return null;
         }
-        return c;
+        // NÃ£o feche o db aqui se vocÃª retorna o cursor, pois ele ainda serÃ¡ usado.
+        return cursor;
     }
     //-----------------------------------------
     public Cursor buscarIdMilitar(String token) {
@@ -104,16 +105,14 @@ public class AfastamentosDAO {
         SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
         String[] busca = new String[]{token};
         Cursor c = db.query(table_name, colunas, "id_afastamento = ?", busca, null, null, null, null);
-        if (c == null) {
-            c.close();
-            db.close();
-            return null;
-        } else if (!c.moveToFirst()) {
-            c.close();
-            db.close();
+        if (c == null || !c.moveToFirst()) {
+            if(c != null) c.close();
+            db.close(); // Fechar o banco de dados em caso de falha ou nÃ£o encontrar dados
             return null;
         }
+        // NÃ£o feche o db aqui, o cursor ainda estÃ¡ ativo e serÃ¡ usado externamente
         return c;
+
 
     }
     public boolean update(AfastamentosVO vo , String cod) {

@@ -125,14 +125,14 @@ public class ContaBancariaDAO {
 
             do {
                 ContaBancariaVO vo = new ContaBancariaVO();
-                vo.setId(c.getInt(c.getColumnIndex("_id")));
-                vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
-                vo.setBanco(c.getString(c.getColumnIndex("banco")));
-                vo.setNragencia(c.getString(c.getColumnIndex("nragencia")));
-                vo.setDvagencia(c.getString(c.getColumnIndex("dvagencia")));
-                vo.setNrconta(c.getString(c.getColumnIndex("nrconta")));
-                vo.setDvconta(c.getString(c.getColumnIndex("dvconta")));
-                vo.setTipoConta(c.getString(c.getColumnIndex("TipoConta")));
+                vo.setId(c.getInt(c.getColumnIndexOrThrow("_id")));
+                vo.setId_pessoa(c.getInt(c.getColumnIndexOrThrow("id_pessoa")));
+                vo.setBanco(c.getString(c.getColumnIndexOrThrow("banco")));
+                vo.setNragencia(c.getString(c.getColumnIndexOrThrow("nragencia")));
+                vo.setDvagencia(c.getString(c.getColumnIndexOrThrow("dvagencia")));
+                vo.setNrconta(c.getString(c.getColumnIndexOrThrow("nrconta")));
+                vo.setDvconta(c.getString(c.getColumnIndexOrThrow("dvconta")));
+                vo.setTipoConta(c.getString(c.getColumnIndexOrThrow("TipoConta")));
                 lista.add(vo);
             }while (c.moveToNext());
             c.close();

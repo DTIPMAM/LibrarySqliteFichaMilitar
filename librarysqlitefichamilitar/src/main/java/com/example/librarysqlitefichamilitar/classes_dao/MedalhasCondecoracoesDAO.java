@@ -1,5 +1,6 @@
 package com.example.librarysqlitefichamilitar.classes_dao;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -106,6 +107,7 @@ public class MedalhasCondecoracoesDAO {
     }
 
 
+ 
     public ArrayList<MedalhasCondecoracoesVO> getListaVO(String id_pessoa) {
 
         ArrayList<MedalhasCondecoracoesVO> lista = new ArrayList<MedalhasCondecoracoesVO>();
@@ -125,12 +127,12 @@ public class MedalhasCondecoracoesDAO {
 
             do {
                 MedalhasCondecoracoesVO vo = new MedalhasCondecoracoesVO();
-                vo.setId(c.getInt(c.getColumnIndex("_id")));
-                vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
-                vo.setMedalhaCondecoracao(c.getString(c.getColumnIndex("medalhaCondecoracao")));
-                vo.setData_condecoracao(c.getString(c.getColumnIndex("data_condecoracao")));
-                vo.setData_boletim(c.getString(c.getColumnIndex("data_boletim")));
-                vo.setNumero_boletim(c.getString(c.getColumnIndex("numero_boletim")));
+                vo.setId(c.getInt(c.getColumnIndexOrThrow("_id")));
+                vo.setId_pessoa(c.getInt(c.getColumnIndexOrThrow("id_pessoa")));
+                vo.setMedalhaCondecoracao(c.getString(c.getColumnIndexOrThrow("medalhaCondecoracao")));
+                vo.setData_condecoracao(c.getString(c.getColumnIndexOrThrow("data_condecoracao")));
+                vo.setData_boletim(c.getString(c.getColumnIndexOrThrow("data_boletim")));
+                vo.setNumero_boletim(c.getString(c.getColumnIndexOrThrow("numero_boletim")));
                 lista.add(vo);
 
             }while (c.moveToNext());

@@ -1,5 +1,6 @@
 package com.example.librarysqlitefichamilitar.classes_dao;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -176,6 +177,7 @@ public class PromocoesDAO {
         return tiporetorn;
     }
 
+ 
     public ArrayList<PromocoesVO> getListaVO(String id_pessoa) {
 
         ArrayList<PromocoesVO> lista = new ArrayList<PromocoesVO>();
@@ -195,12 +197,12 @@ public class PromocoesDAO {
 
             do {
                 PromocoesVO vo = new PromocoesVO();
-                vo.setId(c.getInt(c.getColumnIndex("_id")));
-                vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
-                vo.setTipoPromocao(c.getString(c.getColumnIndex("TipoPromocao")));
-                vo.setDescricao_promocao(c.getString(c.getColumnIndex("descricao_promocao")));
-                vo.setData_boletim(c.getString(c.getColumnIndex("data_boletim")));
-                vo.setNumero_boletim(c.getString(c.getColumnIndex("numero_boletim")));
+                vo.setId(c.getInt(c.getColumnIndexOrThrow("_id")));
+                vo.setId_pessoa(c.getInt(c.getColumnIndexOrThrow("id_pessoa")));
+                vo.setTipoPromocao(c.getString(c.getColumnIndexOrThrow("TipoPromocao")));
+                vo.setDescricao_promocao(c.getString(c.getColumnIndexOrThrow("descricao_promocao")));
+                vo.setData_boletim(c.getString(c.getColumnIndexOrThrow("data_boletim")));
+                vo.setNumero_boletim(c.getString(c.getColumnIndexOrThrow("numero_boletim")));
                 lista.add(vo);
             }while (c.moveToNext());
             c.close();

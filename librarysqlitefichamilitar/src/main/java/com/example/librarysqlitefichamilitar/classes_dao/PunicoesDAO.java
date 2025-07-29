@@ -1,5 +1,6 @@
 package com.example.librarysqlitefichamilitar.classes_dao;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -180,6 +181,7 @@ public class PunicoesDAO {
         return tiporetorn;
     }
 
+ 
     public ArrayList<PunicoesVO> getListaVO(String id_pessoa) {
 
         ArrayList<PunicoesVO> lista = new ArrayList<PunicoesVO>();
@@ -199,12 +201,12 @@ public class PunicoesDAO {
 
             do {
                 PunicoesVO vo = new PunicoesVO();
-                vo.setId(c.getInt(c.getColumnIndex("_id")));
-                vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
-                vo.setData_punicao(c.getString(c.getColumnIndex("data_punicao")));
-                vo.setDescricao_punicao(c.getString(c.getColumnIndex("descricao_punicao")));
-                vo.setData_boletim(c.getString(c.getColumnIndex("data_boletim")));
-                vo.setNumero_boletim(c.getString(c.getColumnIndex("numero_boletim")));
+                vo.setId(c.getInt(c.getColumnIndexOrThrow("_id")));
+                vo.setId_pessoa(c.getInt(c.getColumnIndexOrThrow("id_pessoa")));
+                vo.setData_punicao(c.getString(c.getColumnIndexOrThrow("data_punicao")));
+                vo.setDescricao_punicao(c.getString(c.getColumnIndexOrThrow("descricao_punicao")));
+                vo.setData_boletim(c.getString(c.getColumnIndexOrThrow("data_boletim")));
+                vo.setNumero_boletim(c.getString(c.getColumnIndexOrThrow("numero_boletim")));
                 lista.add(vo);
 
             } while (c.moveToNext());

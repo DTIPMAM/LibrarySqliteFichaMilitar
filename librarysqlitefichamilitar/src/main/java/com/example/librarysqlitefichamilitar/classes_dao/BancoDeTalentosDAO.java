@@ -102,7 +102,7 @@ public class BancoDeTalentosDAO {
         }
     }
 
-    @SuppressLint("Range")
+ 
     public ArrayList<BancoDeTalentosVO> getListaVO(String id_pessoa) {
 
         ArrayList<BancoDeTalentosVO> lista = new ArrayList<BancoDeTalentosVO>();
@@ -121,17 +121,17 @@ public class BancoDeTalentosDAO {
             Tag(ctx, " Cursor  = " + c.getCount() + " Cursor  = " + c.getPosition());
             do {
                 BancoDeTalentosVO vo = new BancoDeTalentosVO();
-                vo.setId(c.getInt(c.getColumnIndex("_id")));
-                vo.setId_tipo_curso_academico(c.getInt(c.getColumnIndex("id_tipo_curso_academico")));
-                vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
-                vo.setId_banco_talentos(c.getInt(c.getColumnIndex("id_banco_talentos")));
-                vo.setId_instituicao_ensino(c.getInt(c.getColumnIndex("id_instituicao_ensino")));
-                vo.setNome_curso(c.getString(c.getColumnIndex("nome_curso")));
-                vo.setInicio_data(c.getString(c.getColumnIndex("inicio")));
-                vo.setFinal_data(c.getString(c.getColumnIndex("final")));
-                vo.setCompleto(c.getString(c.getColumnIndex("completo")));
-                vo.setModalidade(c.getString(c.getColumnIndex("modalidade")));
-                vo.setCarga_horaria(c.getInt(c.getColumnIndex("carga_horaria")));
+                vo.setId(c.getInt(c.getColumnIndexOrThrow("_id")));
+                vo.setId_tipo_curso_academico(c.getInt(c.getColumnIndexOrThrow("id_tipo_curso_academico")));
+                vo.setId_pessoa(c.getInt(c.getColumnIndexOrThrow("id_pessoa")));
+                vo.setId_banco_talentos(c.getInt(c.getColumnIndexOrThrow("id_banco_talentos")));
+                vo.setId_instituicao_ensino(c.getInt(c.getColumnIndexOrThrow("id_instituicao_ensino")));
+                vo.setNome_curso(c.getString(c.getColumnIndexOrThrow("nome_curso")));
+                vo.setInicio_data(c.getString(c.getColumnIndexOrThrow("inicio")));
+                vo.setFinal_data(c.getString(c.getColumnIndexOrThrow("final")));
+                vo.setCompleto(c.getString(c.getColumnIndexOrThrow("completo")));
+                vo.setModalidade(c.getString(c.getColumnIndexOrThrow("modalidade")));
+                vo.setCarga_horaria(c.getInt(c.getColumnIndexOrThrow("carga_horaria")));
                 lista.add(vo);
             } while (c.moveToNext());
             c.close();

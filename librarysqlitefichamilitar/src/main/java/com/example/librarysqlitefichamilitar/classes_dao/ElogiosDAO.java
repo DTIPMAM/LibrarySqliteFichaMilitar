@@ -179,7 +179,7 @@ public class ElogiosDAO {
         return tiporetorn;
     }
 
-    @SuppressLint("Range")
+ 
     public ArrayList<ElogiosVO> getListaVO(String id_pessoa) {
 
         ArrayList<ElogiosVO> lista = new ArrayList<ElogiosVO>();
@@ -199,13 +199,13 @@ public class ElogiosDAO {
 
             do {
                 ElogiosVO vo = new ElogiosVO();
-                vo.setId(c.getInt(c.getColumnIndex("_id")));
-                vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
-                vo.setData_elogio(c.getString(c.getColumnIndex("data_elogio")));
-                vo.setDescricao_elogio(c.getString(c.getColumnIndex("descricao_elogio")));
-                vo.setNome_autoridade(c.getString(c.getColumnIndex("nome_autoridade")));
-                vo.setData_boletim(c.getString(c.getColumnIndex("data_boletim")));
-                vo.setNumero_boletim(c.getString(c.getColumnIndex("numero_boletim")));
+                vo.setId(c.getInt(c.getColumnIndexOrThrow("_id")));
+                vo.setId_pessoa(c.getInt(c.getColumnIndexOrThrow("id_pessoa")));
+                vo.setData_elogio(c.getString(c.getColumnIndexOrThrow("data_elogio")));
+                vo.setDescricao_elogio(c.getString(c.getColumnIndexOrThrow("descricao_elogio")));
+                vo.setNome_autoridade(c.getString(c.getColumnIndexOrThrow("nome_autoridade")));
+                vo.setData_boletim(c.getString(c.getColumnIndexOrThrow("data_boletim")));
+                vo.setNumero_boletim(c.getString(c.getColumnIndexOrThrow("numero_boletim")));
                 lista.add(vo);
             }while (c.moveToNext());
             c.close();

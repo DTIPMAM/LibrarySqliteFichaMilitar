@@ -1,5 +1,6 @@
 package com.example.librarysqlitefichamilitar.classes_dao;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -43,6 +44,7 @@ public class DispensasMedicasDAO {
         return tiporetorn;
     }
 
+    
     public ArrayList<DispensasMedicasVO> getListaVO(String id_pessoa) {
 
         ArrayList<DispensasMedicasVO> lista = new ArrayList<DispensasMedicasVO>();
@@ -62,14 +64,14 @@ public class DispensasMedicasDAO {
 
             do {
                 DispensasMedicasVO vo = new DispensasMedicasVO();
-                vo.setId(c.getInt(c.getColumnIndex("_id")));
-                vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
-                vo.setData_inicio(c.getString(c.getColumnIndex("data_inicio")));
-                vo.setData_termino(c.getString(c.getColumnIndex("data_termino")));
-                vo.setData_boletim(c.getString(c.getColumnIndex("data_boletim")));
-                vo.setTipo_boletim(c.getString(c.getColumnIndex("tipo_boletim")));
-                vo.setNumero_boletim(c.getString(c.getColumnIndex("numero_boletim")));
-                vo.setCid(c.getString(c.getColumnIndex("cid")));
+                vo.setId(c.getInt(c.getColumnIndexOrThrow("_id")));
+                vo.setId_pessoa(c.getInt(c.getColumnIndexOrThrow("id_pessoa")));
+                vo.setData_inicio(c.getString(c.getColumnIndexOrThrow("data_inicio")));
+                vo.setData_termino(c.getString(c.getColumnIndexOrThrow("data_termino")));
+                vo.setData_boletim(c.getString(c.getColumnIndexOrThrow("data_boletim")));
+                vo.setTipo_boletim(c.getString(c.getColumnIndexOrThrow("tipo_boletim")));
+                vo.setNumero_boletim(c.getString(c.getColumnIndexOrThrow("numero_boletim")));
+                vo.setCid(c.getString(c.getColumnIndexOrThrow("cid")));
                 lista.add(vo);
             }while (c.moveToNext());
             c.close();

@@ -98,7 +98,7 @@ public class DeclaracaoPatrimonioDAO {
         }
     }
 
-    @SuppressLint("Range")
+ 
     public ArrayList<DeclaracaoPatrimonioVO> getListaVO(String id_pessoa) {
 
         ArrayList<DeclaracaoPatrimonioVO> lista = new ArrayList<DeclaracaoPatrimonioVO>();
@@ -118,15 +118,15 @@ public class DeclaracaoPatrimonioDAO {
 
             do {
                 DeclaracaoPatrimonioVO vo = new DeclaracaoPatrimonioVO();
-                vo.setId(c.getInt(c.getColumnIndex("_id")));
-                vo.setId_tipo_bens(c.getInt(c.getColumnIndex("id_bens")));
-                vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
-                vo.setValor_bem(c.getInt(c.getColumnIndex("valor_bem")));
-                vo.setApresentou_decla_bens(c.getString(c.getColumnIndex("apresentou_decla_bens")));
-                vo.setAcumula_cargo_funcao(c.getString(c.getColumnIndex("acumula_cargo_funcao")));
-                vo.setDescr(c.getString(c.getColumnIndex("descr")));
-                vo.setObservacoes(c.getString(c.getColumnIndex("observacoes")));
-                vo.setData_criacao(c.getString(c.getColumnIndex("data_criacao")));
+                vo.setId(c.getInt(c.getColumnIndexOrThrow("_id")));
+                vo.setId_tipo_bens(c.getInt(c.getColumnIndexOrThrow("id_bens")));
+                vo.setId_pessoa(c.getInt(c.getColumnIndexOrThrow("id_pessoa")));
+                vo.setValor_bem(c.getInt(c.getColumnIndexOrThrow("valor_bem")));
+                vo.setApresentou_decla_bens(c.getString(c.getColumnIndexOrThrow("apresentou_decla_bens")));
+                vo.setAcumula_cargo_funcao(c.getString(c.getColumnIndexOrThrow("acumula_cargo_funcao")));
+                vo.setDescr(c.getString(c.getColumnIndexOrThrow("descr")));
+                vo.setObservacoes(c.getString(c.getColumnIndexOrThrow("observacoes")));
+                vo.setData_criacao(c.getString(c.getColumnIndexOrThrow("data_criacao")));
                 lista.add(vo);
             } while (c.moveToNext());
             c.close();

@@ -1,5 +1,6 @@
 package com.example.librarysqlitefichamilitar.classes_dao;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -82,6 +83,7 @@ public class GrauInstrucaoDAO {
         Cursor cursor = db.query(table_name, colunas, null, null, null, null, null);
         return cursor.getCount();
     }
+ 
     public List<GrauInstrucaoVO> lista(String codigo) {
 
         List<GrauInstrucaoVO> lista = new ArrayList<GrauInstrucaoVO>();
@@ -91,8 +93,8 @@ public class GrauInstrucaoDAO {
 
             while (c.moveToNext()) {
                 GrauInstrucaoVO vo = new GrauInstrucaoVO();
-                vo.setId_pessoa(c.getInt(c.getColumnIndex("id_pessoa")));
-                vo.setGrauInstrucao(c.getString(c.getColumnIndex("grauInstrucao")));
+                vo.setId_pessoa(c.getInt(c.getColumnIndexOrThrow("id_pessoa")));
+                vo.setGrauInstrucao(c.getString(c.getColumnIndexOrThrow("grauInstrucao")));
                 lista.add(vo);
 
             }
