@@ -1,1 +1,2 @@
-include ':app', ':librarysqlitefichamilitar'
+ include ':app', ':librarysqlitefichamilitar'
+rootProject.name='LibrarySqliteFichaMilitar'
