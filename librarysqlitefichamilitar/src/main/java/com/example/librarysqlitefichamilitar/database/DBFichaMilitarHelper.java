@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 
 public class DBFichaMilitarHelper extends SQLiteOpenHelper {
-    private static final int Version = 3;
+    private static final int Version = 4;
     public DBFichaMilitarHelper(Context context) {
         super(context, "DBFichaMilitar", null, Version);
     }
@@ -86,6 +86,12 @@ public class DBFichaMilitarHelper extends SQLiteOpenHelper {
                 "nome_curso VARCHAR(100), inicio DATE, final DATE, completo VARCHAR(60), " +
                 "modalidade VARCHAR(60), carga_horaria INT);");
 
+        //inicio version 4
+        //DB pessoas_concessoes
+        db.execSQL("CREATE TABLE pessoas_concessoes( _id INTEGER PRIMARY KEY, id_pessoa INT, inicio DATE, termino DATE, numero_dias INT," +
+                "tipo_concessoes VARCHAR(200), tipo_boletim_inicio VARCHAR(5), data_boletim_inicio DATE," +
+                "numero_boletim_inicio INT);");
+
 
 
     }
@@ -104,6 +110,12 @@ public class DBFichaMilitarHelper extends SQLiteOpenHelper {
             db.execSQL("CREATE TABLE pessoas_banco_talento( _id INTEGER PRIMARY KEY, id_tipo_curso_academico INT, id_pessoa INT, id_banco_talentos INT, id_instituicao_ensino INT, " +
                     "nome_curso VARCHAR(100), inicio DATE, final DATE, completo VARCHAR(60), " +
                     "modalidade VARCHAR(60), carga_horaria INT);");
+
+            //inicio version 4
+            //DB pessoas_concessoes
+            db.execSQL("CREATE TABLE pessoas_concessoes( _id INTEGER PRIMARY KEY, id_pessoa INT, inicio DATE, termino DATE, numero_dias INT," +
+                    "tipo_concessoes VARCHAR(200), tipo_boletim_inicio VARCHAR(5), data_boletim_inicio DATE," +
+                    "numero_boletim_inicio INT);");
 
         }
 
