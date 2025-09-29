@@ -7,6 +7,11 @@ android{
         minSdk 24
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_18
+        targetCompatibility JavaVersion.VERSION_18
+    }
+
     namespace 'com.example.librarysqlitefichamilitar'
 
 }
