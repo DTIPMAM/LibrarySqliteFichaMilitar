@@ -1,5 +1,15 @@
 apply plugin: 'maven-publish'
-publishing {
+def githubProperties = new Properties()
+githubProperties.load(new FileInputStream(rootProject.file("github.properties"))) //Set env variable GPR_USER & GPR_API_KEY if not adding a properties file
+
+def getVersionName = { ->
+    return "2.0.1" // Replace with version Name
+}
+
+def getArtificatId = { ->
+    return "librarysqlitefichamilitar" // Replace with library name ID == nome da sua library
+}
+/*publishing {
     publications {
         release(MavenPublication) {
             groupId = 'io.jitpack'
@@ -7,8 +17,33 @@ publishing {
             version = '1.5.9'
         }
     }
-}
+}*/
 
+publishing {
+
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/DTIPMAM/LibrarySqliteFichaMilitar")
+            credentials {
+                username = githubProperties['gpr.usr'] ?: System.getenv("GPR_USER")
+                password = githubProperties['gpr.key'] ?: System.getenv("GPR_API_KEY")
+            }
+        }
+    }
+
+    publications {
+        gpr(MavenPublication) {
+            groupId 'com.example' // Replace with group ID "nome do pacote da sua library " ex: br.com.msm.mylibrary == br.com.msm
+            artifactId getArtificatId()
+            version getVersionName()
+            //caminho do diretorio da saida do arquvio .aar obs: no menu > gradle execute o build dentro da sua library
+            artifact("$projectDir/librarysqlitefichamilitar/build/outputs/aar/${getArtificatId()}-release.aar")
+
+
+        }
+    }
+}
 
 buildscript{
     repositories{
