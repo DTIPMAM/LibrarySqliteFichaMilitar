@@ -164,7 +164,7 @@ public class ConcessoesDAO {
     }
 
 
-    /*public boolean VerificaSeTemIdPessoa(String id_pessoa) {
+    public boolean VerificaSeTemIdPessoa(String id_pessoa) {
 
         boolean tiporetorn = false;
         try {
@@ -184,7 +184,7 @@ public class ConcessoesDAO {
             e.printStackTrace();
         }
         return tiporetorn;
-    }*/
+    }
 
 
     public ArrayList<ConcessoesVO> getListaVO(String id_pessoa) {
