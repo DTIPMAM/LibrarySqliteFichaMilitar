@@ -6,6 +6,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 import com.example.librarysqlitefichamilitar.classes_vo.ConcessoesVO;
 import com.example.librarysqlitefichamilitar.database.DBFichaMilitarHelper;
@@ -16,7 +17,7 @@ public class ConcessoesDAO {
     private final Context ctx;
     private final String table_name = "pessoas_concessoes";
     private final String[] colunas = new String[]{
-            "id", "id_pessoa", "inicio", "termino", "numero_dias", "tipo_concessoes", "tipo_boletim_inicio",
+            "_id", "id_pessoa", "inicio", "termino", "numero_dias", "tipo_concessoes", "tipo_boletim_inicio",
             "data_boletim_inicio", "numero_boletim_inicio"
     };
 
@@ -27,7 +28,7 @@ public class ConcessoesDAO {
     public boolean insert(ConcessoesVO vo) {
         SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put("id", vo.getId());
+        values.put("_id", vo.getId());
         values.put("id_pessoa", vo.getId_pessoa());
         values.put("inicio", vo.getInicio());
         values.put("termino", vo.getTermino());
@@ -59,7 +60,7 @@ public class ConcessoesDAO {
     public Cursor buscarIdMilitar(String token) {
         SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
         String[] busca = new String[]{token};
-        Cursor c = db.query(table_name, colunas, "id = ?", busca, null, null, null, null);
+        Cursor c = db.query(table_name, colunas, "_id = ?", busca, null, null, null, null);
         if (c == null) {
             c.close();
             db.close();
@@ -76,7 +77,7 @@ public class ConcessoesDAO {
     public boolean update(ConcessoesVO vo, String cod) {
         SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put("id", vo.getId());
+        values.put("_id", vo.getId());
         values.put("id_pessoa", vo.getId_pessoa());
         values.put("inicio", vo.getInicio());
         values.put("termino", vo.getTermino());
@@ -85,7 +86,7 @@ public class ConcessoesDAO {
         values.put("tipo_boletim_inicio", vo.getTipo_boletim_inicio());
         values.put("data_boletim_inicio", vo.getData_boletim_inicio());
         values.put("numero_boletim_inicio", vo.getNumero_boletim_inicio());
-        if (db.update(table_name, values, "id = ?", new String[]{cod}) > 0) {
+        if (db.update(table_name, values, "_id = ?", new String[]{cod}) > 0) {
             db.close();
             return true;
         } else {
@@ -119,7 +120,7 @@ public class ConcessoesDAO {
     public boolean deletaitem(String num) {
         boolean excluir = false;
         SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
-        if (db.delete(table_name, "id = ?", new String[]{num}) > 0) {
+        if (db.delete(table_name, "_id = ?", new String[]{num}) > 0) {
             excluir = true;
         } else {
             excluir = false;
@@ -149,7 +150,7 @@ public class ConcessoesDAO {
 
             String[] busca = new String[]{codescala};
 
-            Cursor c = db.query(table_name, colunas, "id = ?", busca, null, null, null, null);
+            Cursor c = db.query(table_name, colunas, "_id = ?", busca, null, null, null, null);
             if (c.getCount() >= 1) {
                 tiporetorn = true;
             } else {
@@ -181,7 +182,8 @@ public class ConcessoesDAO {
             c.close();
             db.close();
         } catch (Exception e) {
-            e.printStackTrace();
+           // e.printStackTrace();
+            Log.e("VerificaSeTemIdPessoa", "erro: " + e.getMessage());
         }
         return tiporetorn;
     }
@@ -204,7 +206,7 @@ public class ConcessoesDAO {
 
             do {
                 ConcessoesVO vo = new ConcessoesVO();
-                vo.setId(c.getInt(c.getColumnIndexOrThrow("id")));
+                vo.setId(c.getInt(c.getColumnIndexOrThrow("_id")));
                 vo.setId_pessoa(c.getInt(c.getColumnIndexOrThrow("id_pessoa")));
                 vo.setInicio(c.getString(c.getColumnIndexOrThrow("inicio")));
                 vo.setTermino(c.getString(c.getColumnIndexOrThrow("termino")));
@@ -229,7 +231,7 @@ public class ConcessoesDAO {
 
         SQLiteDatabase db = new DBFichaMilitarHelper(ctx).getWritableDatabase();
         String[] busca = new String[]{id};
-        Cursor c = db.query(table_name, colunas, "id = ?", busca, null, null, null, null);
+        Cursor c = db.query(table_name, colunas, "_id = ?", busca, null, null, null, null);
         if (c == null) {
             c.close();
             db.close();

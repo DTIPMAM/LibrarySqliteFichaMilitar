@@ -6,14 +6,14 @@ import android.os.Parcelable;
 import androidx.annotation.NonNull;
 
 public class ConcessoesVO implements Parcelable {
-    private int id;
+    private int _id;
     private String inicio;
     private String termino;
     private int numero_dias;
     private String tipo_concessoes;
 
     protected ConcessoesVO(Parcel in) {
-        id = in.readInt();
+        _id = in.readInt();
         inicio = in.readString();
         termino = in.readString();
         numero_dias = in.readInt();
@@ -48,7 +48,7 @@ public class ConcessoesVO implements Parcelable {
     @Override
     public String toString() {
         return "ConcessoesVO{" +
-                "id=" + id +
+                "_id=" + _id +
                 ", inicio='" + inicio + '\'' +
                 ", termino='" + termino + '\'' +
                 ", numero_dias=" + numero_dias +
@@ -124,7 +124,7 @@ public class ConcessoesVO implements Parcelable {
 
     @Override
     public void writeToParcel(@NonNull Parcel dest, int flags) {
-        dest.writeInt(id);
+        dest.writeInt(_id);
         dest.writeString(inicio);
         dest.writeString(termino);
         dest.writeInt(numero_dias);
@@ -136,11 +136,11 @@ public class ConcessoesVO implements Parcelable {
     }
 
     public int getId() {
-        return id;
+        return _id;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this._id = id;
     }
 
     public String getInicio() {

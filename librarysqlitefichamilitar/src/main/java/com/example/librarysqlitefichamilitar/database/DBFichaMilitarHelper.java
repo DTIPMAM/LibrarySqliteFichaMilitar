@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 
 public class DBFichaMilitarHelper extends SQLiteOpenHelper {
-    private static final int Version = 4;
+    private static final int Version = 5;
     public DBFichaMilitarHelper(Context context) {
         super(context, "DBFichaMilitar", null, Version);
     }
@@ -92,6 +92,11 @@ public class DBFichaMilitarHelper extends SQLiteOpenHelper {
                 "tipo_concessoes VARCHAR(200), tipo_boletim_inicio VARCHAR(5), data_boletim_inicio DATE," +
                 "numero_boletim_inicio INT);");
 
+        //inicio version 5
+        //DB historico_averbacoes
+        db.execSQL("CREATE TABLE historico_averbacoes( _id INTEGER PRIMARY KEY, idPessoa INT, local VARCHAR(100), tipo VARCHAR(100), numero_dias INT," +
+                "boletim VARCHAR(100));");
+
 
 
     }
@@ -116,6 +121,11 @@ public class DBFichaMilitarHelper extends SQLiteOpenHelper {
             db.execSQL("CREATE TABLE pessoas_concessoes( _id INTEGER PRIMARY KEY, id_pessoa INT, inicio DATE, termino DATE, numero_dias INT," +
                     "tipo_concessoes VARCHAR(200), tipo_boletim_inicio VARCHAR(5), data_boletim_inicio DATE," +
                     "numero_boletim_inicio INT);");
+
+            //inicio version 5
+            //DB historico_averbacoes
+            db.execSQL("CREATE TABLE historico_averbacoes( _id INTEGER PRIMARY KEY, idPessoa INT, local VARCHAR(100), tipo VARCHAR(100), numero_dias INT," +
+                    "boletim VARCHAR(100));");
 
         }
 
