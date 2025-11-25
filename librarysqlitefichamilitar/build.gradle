@@ -2,7 +2,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'com.android.library'
 group='com.github.dtipmam'
 android{
-    compileSdk 35
+    compileSdk 36
     defaultConfig{
         minSdk 24
     }
